@@ -1,0 +1,135 @@
+//Main header navigation
+header .navbar {
+    z-index         : 1000;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    transform       : translateY(0);
+    transition      : $transition;
+    background-color: var(--bs-white);
+
+    &.sticky {
+        // background: $bg-pri;
+        box-shadow: 11px 8px 37px 0 rgba(38, 40, 128, 0.1);
+        padding   : 0.2rem rem(5px);
+
+        @include media-breakpoint-up(md) {
+            padding: .6rem 0.4rem;
+        }
+    }
+}
+
+.navbar-overide {
+    padding: {
+        top   : rem(10px);
+        bottom: rem(10px);
+        left  : rem(5px);
+        right : rem(5px);
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: {
+            top   : rem(18px);
+            bottom: rem(18px);
+        }
+    }
+}
+
+.header-unpin .navbar {
+    @include media-breakpoint-up(md) {
+        transform: translateY(-110px);
+    }
+}
+
+.header-pin .navbar {
+    transform: translateY(0);
+}
+
+// Header list block
+
+.sn-headerblock-list {
+    display    : flex;
+    align-items: center;
+
+    &__item {
+        position          : relative;
+        margin-inline-end : rem(20px) !important;
+        padding-inline-end: rem(20px) !important;
+
+        @include media-breakpoint-up(md) {
+            margin-inline-end : rem(58px) !important;
+            padding-inline-end: rem(58px) !important;
+        }
+
+        &:last-child {
+            padding: 0 !important;
+        }
+
+        &:first-child::after {
+            content      : "";
+            position     : absolute;
+            top          : 50%;
+            right        : 0;
+            // background: $white;
+            height       : calc(100% - 15%);
+            width        : 1px;
+            transform    : translateY(-50%);
+        }
+    }
+}
+
+
+
+// Nav-links
+
+// .sn-nav-link {
+//     color          : $white !important;
+//     display        : inline-flex;
+//     position       : relative;
+//     line-height    : 120%;
+//     text-decoration: none;
+//     font-size      : rem(14px);
+
+//     margin: {
+//         right: rem(10px) !important;
+//     }
+
+//     @include media-breakpoint-up(md) {
+//         font-size: rem(18px);
+//     }
+
+//     @include media-breakpoint-up(md) {
+//         margin: {
+//             left : rem(25px) !important;
+//             right: rem(25px) !important;
+//         }
+//     }
+
+//     &::after {
+//         content         : "";
+//         position        : absolute;
+//         left            : 0;
+//         bottom          : -0.2rem;
+//         width           : 100%;
+//         height          : 1px;
+//         background-color: $second;
+//         transition      : $transition;
+//         transform-origin: left;
+//         transform       : scaleX(0);
+//     }
+
+//     &:hover::after,
+//     &.active::after {
+//         transform: scaleX(1);
+//     }
+
+//     &.active {
+//         color: $primary !important;
+//     }
+// }
+
+
+.cog-brand-logo {
+    height: rem(45px);
+}

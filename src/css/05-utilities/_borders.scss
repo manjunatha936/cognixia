@@ -1,0 +1,25 @@
+// Borders
+
+.cog-border-pri {
+    border-color: var(--bs-border-color-rgba);
+}
+
+// Border-radius
+
+.cog-rounded-reg {
+    border-radius: var(--bs-border-radius-sm);
+}
+
+.cog-rounded-lg {
+    border-radius: var(--bs-border-radius-xl);
+}
+
+// Streched lines
+.cog-nostrech {
+    align-self: unset;
+}
+
+.vr-black {
+    background-color: var(--bs-black);
+    opacity         : 1;
+}

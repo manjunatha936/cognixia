@@ -1,0 +1,33 @@
+.page-navigation {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.page-link {
+  color: $primary;
+  @extend .fnt-16;
+  font-weight: $fnt-500;
+  background: transparent;
+  border: none;
+  padding: 12px 8px;
+
+  &.active {
+    color: $thrice;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.pos-rel-2 {
+  z-index: 2;
+  position: relative;
+}
+
+.pos-rel {
+  position: relative;
+}

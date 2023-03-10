@@ -1,0 +1,61 @@
+.cog-btn {
+  font-size      : rem(14px);
+  line-height    : rem(24px);
+  width          : 168px;
+  max-width      : 100%;
+  padding        : .95rem 2rem;
+  text-decoration: none;
+  border-radius  : var(--bs-border-radius-pill);
+  font-weight    : var(--bs-font-weight500);
+  border         : none;
+  @extend .cog-flexcenter;
+  transition: $transition;
+  z-index   : 1;
+
+  &--pri {
+    background: var(--bs-bg-primary) !important;
+    color     : var(--bs-white) !important;
+
+    &:is(:hover, :focus, :visited) {
+      border    : 1px solid var(--bs-bg-primary) !important;
+      background: transparent !important;
+      color     : var(--bs-bg-primary) !important;
+    }
+  }
+
+  &--white {
+    background: var(--bs-white) !important;
+    color     : var(--bs-secondary) !important;
+  }
+
+  &--default {
+    border: 1px solid var(--bs-bg-primary) !important;
+    color : var(--bs-secondary);
+
+    &:is(:hover, :focus, :visited) {
+      transform : $transition;
+      color     : var(--bs-white);
+      background: var(--bs-bg-primary);
+    }
+  }
+
+  &--lg {
+    width    : 268px;
+    max-width: 100%;
+  }
+
+  &:is(:hover, :focus, :visited) {
+    color: var(--bs-white);
+  }
+}
+
+.cog-btn-md {
+  width    : 191px;
+  max-width: 100%;
+}
+
+// Video button styles
+
+.cog-play-txt {
+  color: var(--bs-link-color);
+}

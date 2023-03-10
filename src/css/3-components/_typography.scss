@@ -1,0 +1,61 @@
+.h1 {
+  line-height: 110% !important;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(64px) !important;
+  }
+}
+
+.h2 {
+  @include media-breakpoint-up(md) {
+    font-size  : rem(56px) !important;
+    line-height: 70px !important;
+  }
+}
+
+.h3 {
+  line-height: 120% !important;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(36px) !important;
+  }
+}
+
+.h4 {
+  line-height: 125% !important;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(24px) !important;
+  }
+}
+
+.h5 {
+  line-height: 125% !important;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(20px) !important;
+  }
+}
+
+.h6 {
+  line-height: 24px !important;
+
+  @include media-breakpoint-up(md) {
+    font-size: rem(16px) !important;
+  }
+}
+
+
+// sub fonts
+
+
+
+// Lead component
+
+.cog-lead {
+  margin-top: rem(10px);
+}
+
+.cog-txt-muted {
+  display: inline-block;
+}

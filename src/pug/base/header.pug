@@ -1,0 +1,18 @@
+header(class="header-pin" id="header")
+  .nav.navbar.navbar-expand-lg.navbar-overide
+    .container
+      // brand logo
+      a.navbar-brand(href='index.html')
+          img.cog-brand-logo(src="./img/icons/brand-logo.svg" alt="Brand logo")
+      
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      
+      //Header nav-list
+      #navbarText.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto.mb-2.mb-lg-0.gap-5
+              li.nav-item
+                  a.cog-nav-link.active(aria-current='page' href='javascript:void(0);') Capabilities
+              li.nav-item
+                  a.cog-nav-link(href='javascript:void(0);') About Us
+          a.cog-btn.cog-btn--pri.ms-md-5(href="javascript:void(0);") Get in touch

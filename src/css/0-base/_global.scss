@@ -1,0 +1,13 @@
+ul,
+li {
+  padding      : 0 !important;
+  margin       : 0 !important;
+  // margin    : 0 !important;
+  list-style   : none;
+}
+
+video::-webkit-media-controls-panel {
+  padding: 0 30px;
+  background-image: linear-gradient(transparent,
+      transparent) !important; //Transparent for your case
+}

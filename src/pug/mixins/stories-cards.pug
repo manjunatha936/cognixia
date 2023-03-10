@@ -1,0 +1,8 @@
+mixin Stories_cards(card_src,card_alt,card__des)
+    .sn-card
+        a(href="people-story.html")
+            img.sn-imgfluid(src= card_src alt=card_alt)
+        .sn-card__body
+            p.sn-card__text=card__des
+        a.sn-btn.sn-btn--pri.sn-card-link(href="people-story.html") Read Peter-Jan's story
+        //- .sn-card__footer

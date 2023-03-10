@@ -1,0 +1,5 @@
+mixin Slidercard(imageUrl, card_heading, card_des)
+    .cog-card.cog-card--cover.rounded-0.border-0.no-hover.cog-flexcenter.cog-bg-theme(style=`background-image: url('${imageUrl}');`)
+        .cog-card--cover__body.text-white.cog-flexcenter.text-center
+            h4.fs-32.fw-xbold=card_heading
+            p.cog-lead.text-white.fs-18=card_des

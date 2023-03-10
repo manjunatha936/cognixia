@@ -1,0 +1,47 @@
+:root {
+    --bs-black        : #000000 !important;
+    --bs-white        : #ffffff;
+    --bs-gray         : #6c757d;
+    --bs-code-color   : #E00000;
+    --bs-gray-100     : #707070 !important;
+    --bs-bg-primary   : #0952A9 !important;
+    --bs-bg-secondary : #F3F9FF !important;
+    --bs-bg-thersary  : #4984DD !important;
+    --bs-secondary    : #151224 !important;
+    --bs-bg-theme     : #014E96 !important;
+    --bs-blue-light   : #F3F9FF !important;
+    --bs-dark         : #212529;
+    --bs-primary-rgb  : 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-transparent  : transparent;
+    --main-font       : 'Outfit', sans-serif;
+    --bs-bg-gradient  : linear-gradient(82.76deg, #00387A 50.42%, rgba(7, 109, 132, 0.56) 97.57%) !important;
+
+    --bs-body-font-family: var(--main-font);
+    --bs-body-font-size  : 1rem;
+    --bs-body-font-weight: 400;
+    --bs-font-weight500  : 500;
+    --bs-font-weight-600 : 600;
+    --bs-font-weight-700 : 700;
+
+    --bs-body-color       : #212529;
+    --bs-body-bg          : #fff;
+    --bs-border-width     : 1px;
+    --bs-border-style     : solid;
+    --bs-border-color-rgba: rgba(0, 0, 0, 0.5);
+    --bs-border-color     : #EEEEEE !important;
+
+    --bs-border-radius-sm  : 16px !important;
+    --bs-border-radius-xl  : 50px !important;
+    --bs-border-radius-xxl : 50% !important;
+    --bs-text-letterspacing: 0.01em;
+    --bs-link-color        : #01397B !important;
+    --bs-link-hover-color  : #0a58ca;
+    --bs-highlight-bg      : #fff3cd;
+}
+
+// Transtion
+$transition: all 0.6s ease;
+
+// Boxshadow
+$boxshadow: 0px 5px 25px rgba(0, 0, 0, 0.05);

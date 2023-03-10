@@ -1,0 +1,49 @@
+.zw-results-card {
+  border-bottom: 1px solid #e4ded3;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  &__heading {
+    font-family: $gowtham-bold;
+    font-size: 21px;
+    line-height: 31px;
+  }
+  &__des {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba($color: #4c4a48, $alpha: 0.9);
+  }
+  &__cnt {
+    @include media-breakpoint-down(md) {
+      padding-top: 1rem;
+    }
+    @include media-breakpoint-up(md) {
+      padding-left: 1.2rem;
+    }
+  }
+}
+
+.zw-148x148 {
+  width: 148px;
+  @include media-breakpoint-down(md) {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.zw-date {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $gowtham-bold;
+  display: block;
+  color: #4c4a48;
+}

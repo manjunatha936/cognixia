@@ -1,0 +1,60 @@
+.fs-36 {
+    font-size  : rem(25px);
+    line-height: 120%;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(36px) !important;
+    }
+}
+
+.fs-32 {
+    font-size  : rem(25px);
+    line-height: 120%;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(32px);
+    }
+}
+
+.fs-24 {
+    font-size  : rem(18px) !important;
+    line-height: rem(28px) !important;
+
+    @include media-breakpoint-up(lg) {
+        font-size  : rem(24px) !important;
+        line-height: 150% !important;
+    }
+}
+
+.fs-18 {
+    font-size  : rem(18px) !important;
+    line-height: 24px !important;
+}
+
+.fs-16 {
+    font-size  : rem(16px) !important;
+    line-height: 150%;
+}
+
+.fs-14 {
+    font-size  : rem(14px) !important;
+    line-height: rem(22px) !important;
+}
+
+// font-weights
+
+.fw-normal {
+    font-weight: var(--bs-body-font-weight) !important;
+}
+
+.fw-semibold {
+    font-weight: var(--bs-font-weight500) !important;
+}
+
+.fw-bold {
+    font-weight: var(--bs-font-weight-600) !important;
+}
+
+.fw-xbold {
+    font-weight: var(--bs-font-weight-700) !important;
+}

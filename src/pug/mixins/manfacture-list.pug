@@ -1,0 +1,6 @@
+// MIXIN OUR SERVICES LIST MIXIN
+mixin MAList(href, ...malists)
+    a.zw-ma-blocklist-link(href=href)
+        each list in malists
+            span.zw-ma-blocklist__text=list
+            i.icon.icon-arrow

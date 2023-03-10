@@ -1,0 +1,16 @@
+.cog-banner {
+  position: relative;
+
+  &__figwrap {
+    width: 50%;
+  }
+}
+
+.cog-banner-content {
+  position: absolute;
+  top     : 0;
+  left    : 0;
+  right   : 0;
+  bottom  : 0;
+  color   : var(--bs-white);
+}

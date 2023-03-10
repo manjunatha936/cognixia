@@ -1,0 +1,43 @@
+.cog-bg-primary {
+    background: var(--bs-bg-secondary);
+}
+
+.cog-bg-info {
+    background: var(--bs-bg-thersary);
+}
+
+.cog-bg-white {
+    background: $white;
+}
+
+.cog-bg-lightblue {
+    background: var(--bs-blue-light);
+}
+
+.cog-bg-theme {
+    background: var(--bs-bg-theme);
+}
+
+.cog-clr-primary {
+    color: var(--bs-bg-primary);
+}
+
+.cog-clr-black {
+    color: var(--bs-black);
+}
+
+
+// Gradients
+.cog-bg-gradient {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+    height  : 100%;
+    width   : 100%;
+
+    &--pri {
+        background: var(--bs-bg-gradient);
+    }
+}

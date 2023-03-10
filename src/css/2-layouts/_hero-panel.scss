@@ -1,0 +1,22 @@
+.cog-heropanel {
+    &__cnt {
+        padding: {
+            top   : rem(80px);
+            bottom: rem(80px);
+        }
+    }
+}
+
+.cog-pattern-figwrap {
+    position: relative;
+}
+
+.cog-pattern-fig {
+    position: absolute;
+    overflow: hidden;
+}
+
+.cog-paneltxt-hr-center {
+    display    : flex;
+    align-items: center;
+}

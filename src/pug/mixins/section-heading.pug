@@ -1,0 +1,14 @@
+// MIXIN OUR SERVICES LIST MIXIN
+mixin SectionLead(SectionCondition, section_heading, section_des, btn_text) 
+    - var showLogin = false;
+    if showLogin == SectionCondition
+        h2.h2.mb-2.mb-md-3.text-uppercase= section_heading
+        p.zw-section-lead__des.zm-clr-gr4c.mt-md-2= section_des
+    
+    else
+        h2.h2.text-uppercase= section_heading
+        p.zw-section-lead__des.zm-clr-gr4c.mt-md-2= section_des
+        button.zw-btn.zw-btn--pri.mt-3.mt-md-4.mt-lg-5
+            span= btn_text
+            i.icon.icon-arrow.ms-2
+            //- img.ms-3(src="./img/icons/arrow.svg" alt="Arrow image")

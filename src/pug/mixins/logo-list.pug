@@ -1,0 +1,6 @@
+// MIXIN OUR SERVICES LIST MIXIN
+mixin BrandsList(list_class, ...lists)
+    ul.zw-logolist.w-100.mb-0(class=list_class)
+        each list in lists
+            li.zw-logolist__item
+                img.img-fit(src=list alt="Logo")

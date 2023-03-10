@@ -1,0 +1,29 @@
+.cog-arrows-container {
+    position : absolute;
+    bottom   : -1.5rem;
+    z-index  : 100;
+    left     : 0;
+    right    : 0;
+    max-width: 135px;
+    margin   : auto;
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        content: none;
+    }
+}
+
+.swiper-button-prev {
+    transform: rotate(180deg);
+}
+
+.cog-btn-circle {
+    height       : rem(50px);
+    width        : rem(50px);
+    background   : var(--bs-bg-primary);
+    border-radius: var(--bs-border-radius-xxl);
+
+    .cog-icon-arrow path {
+        fill: var(--bs-white);
+    }
+}

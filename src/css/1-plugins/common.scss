@@ -1,0 +1,53 @@
+body {
+  font-family            : var(--main-font);
+  overflow-x             : hidden;
+  color                  : $primary;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color                  : var(--bs-secondary);
+
+  p {
+    padding    : 0;
+    margin     : 0;
+    font-size  : rem(20px);
+    line-height: 130%;
+    @extend .fw-normal;
+    color         : var(--bs-gray-100);
+    letter-spacing: var(--bs-text-letterspacing);
+  }
+
+}
+
+.cog-globaltp {
+  padding-top: 6rem;
+}
+
+// Flex
+
+.cog-mobile-fxrv {
+  @include media-breakpoint-down(md) {
+    flex-direction: column-reverse;
+  }
+}
+
+.cog-flexcenter {
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.cog-vr-flexcenter {
+  display    : flex;
+  align-items: center;
+}
+
+// Styleguide css
+
+.cog-highlight {
+  border : 1px solid var(--bs-gray-100);
+  padding: 1rem 2rem;
+}
+
+.nt {
+  color: var(--bs-code-color);
+}

@@ -1,0 +1,105 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.zwFile {
+  input[type="file"] {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+
+  .file-selected {
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    color: #4caf50;
+  }
+  label.sr-only {
+    width: 100%;
+    background: $primary;
+    padding: 40px 0;
+    text-align: center;
+    color: $white !important;
+    cursor: pointer;
+  }
+}
+
+.zw-needHelp-blocklist {
+  .linkfill path {
+    fill: $second09 !important;
+  }
+  .zwPanel {
+    width: 46%;
+    background: $transparent;
+    border: 1px solid #dad4c9;
+    padding: 1rem !important;
+    transition: $transition;
+    margin: 1rem 0.5rem;
+
+    @include media-breakpoint-down(md) {
+      margin: 1rem 0.5rem 0 1rem;
+      width: 92%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 31.5%;
+      padding: 1.5rem !important;
+    }
+
+    a,
+    p {
+      color: $second09 !important;
+      text-decoration: none !important;
+    }
+    &:hover {
+      border: 1px solid #dad4c9;
+      background: #030303;
+      transition: $transition;
+      border: none;
+      a,
+      p {
+        color: $txt-clr !important;
+      }
+      .zw-social-link {
+        background: $white !important;
+        color: $tin-blue !important;
+        transition: $transition;
+      }
+    }
+  }
+
+  &--openings {
+    a.zwPanel {
+      text-decoration: none !important;
+      background: $transparent;
+      padding: 1rem !important;
+      transition: $transition;
+      margin: 0 0 1.5rem 1rem;
+
+      @include media-breakpoint-down(md) {
+        border: none;
+        border-bottom: 1px solid #dad4c9;
+        margin: 0 0 0 0.5rem;
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      @include media-breakpoint-up(lg) {
+        border: 1px solid #dad4c9;
+        width: 31.33%;
+        padding: 1.5rem !important;
+      }
+      &:hover {
+        svg path {
+          fill: $black;
+        }
+      }
+    }
+  }
+}
