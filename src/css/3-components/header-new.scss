@@ -12,7 +12,7 @@ header .navbar {
     &.sticky {
         // background: $bg-pri;
         box-shadow: 11px 8px 37px 0 rgba(38, 40, 128, 0.1);
-        padding   : 0.2rem rem(5px);
+        padding   : 0.5rem rem(5px);
 
         @include media-breakpoint-up(md) {
             padding: .6rem 0.4rem;
@@ -79,57 +79,12 @@ header .navbar {
     }
 }
 
-
-
 // Nav-links
 
-// .sn-nav-link {
-//     color          : $white !important;
-//     display        : inline-flex;
-//     position       : relative;
-//     line-height    : 120%;
-//     text-decoration: none;
-//     font-size      : rem(14px);
-
-//     margin: {
-//         right: rem(10px) !important;
-//     }
-
-//     @include media-breakpoint-up(md) {
-//         font-size: rem(18px);
-//     }
-
-//     @include media-breakpoint-up(md) {
-//         margin: {
-//             left : rem(25px) !important;
-//             right: rem(25px) !important;
-//         }
-//     }
-
-//     &::after {
-//         content         : "";
-//         position        : absolute;
-//         left            : 0;
-//         bottom          : -0.2rem;
-//         width           : 100%;
-//         height          : 1px;
-//         background-color: $second;
-//         transition      : $transition;
-//         transform-origin: left;
-//         transform       : scaleX(0);
-//     }
-
-//     &:hover::after,
-//     &.active::after {
-//         transform: scaleX(1);
-//     }
-
-//     &.active {
-//         color: $primary !important;
-//     }
-// }
-
-
 .cog-brand-logo {
-    height: rem(45px);
+    height: rem(35px);
+
+    @include media-breakpoint-up(md) {
+        height: rem(45px);
+    }
 }

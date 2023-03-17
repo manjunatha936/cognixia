@@ -1,0 +1,23 @@
+doctype html
+html(lang="en", data-page="rewire" dir="ltr")
+	head
+		include ./pug/base/head.pug
+		+head("")
+	
+	body.cog-globaltp
+		include ./pug/base/header.pug
+		main
+			//Banner
+			include ./pug/layouts/rewire/main.pug
+						
+			//IT
+			include ./pug/base/get-in-touch.pug
+		
+		//- Footer
+		include ./pug/base/footer.pug
+
+
+		//scripts
+		include ./pug/base/scripts.pug
+		script(defer src="./js/home.js")
+		script(defer src="./js/main.js")

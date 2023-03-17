@@ -18,12 +18,18 @@
     background: var(--bs-bg-theme);
 }
 
+// Colors
+
 .cog-clr-primary {
     color: var(--bs-bg-primary);
 }
 
 .cog-clr-black {
     color: var(--bs-black);
+}
+
+.cog-clr-darkgray {
+    color: var(--bs-darkgray);
 }
 
 
@@ -36,6 +42,10 @@
     bottom  : 0;
     height  : 100%;
     width   : 100%;
+
+    @include media-breakpoint-down(md) {
+        background: var(--bs-bg-mob-gradient) !important;
+    }
 
     &--pri {
         background: var(--bs-bg-gradient);

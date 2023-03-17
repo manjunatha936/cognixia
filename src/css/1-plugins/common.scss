@@ -5,21 +5,45 @@ body {
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
   color                  : var(--bs-secondary);
+  scroll-behavior        : smooth;
 
   p {
     padding    : 0;
     margin     : 0;
-    font-size  : rem(20px);
+    font-size  : rem(16px);
     line-height: 130%;
     @extend .fw-normal;
     color         : var(--bs-gray-100);
     letter-spacing: var(--bs-text-letterspacing);
+
+    @include media-breakpoint-up(md) {
+      font-size: rem(20px);
+    }
   }
 
 }
 
 .cog-globaltp {
-  padding-top: 6rem;
+  padding-top: 4.1rem;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 6rem;
+  }
+}
+
+section {
+  @include media-breakpoint-down(md) {
+    padding : {
+      left : rem(10px) !important;
+      right: rem(10px) !important;
+    }
+  }
+}
+
+.cog-mob-p0 {
+  @include media-breakpoint-down(md) {
+    padding: 0 !important;
+  }
 }
 
 // Flex
@@ -27,6 +51,12 @@ body {
 .cog-mobile-fxrv {
   @include media-breakpoint-down(md) {
     flex-direction: column-reverse;
+  }
+}
+
+.cog-mb-flexcolum {
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
   }
 }
 

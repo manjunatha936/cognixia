@@ -6,11 +6,15 @@
   transition   : $transition;
 
   &__body {
-    padding        : 2rem;
+    padding        : 1.5rem 1.6rem 1.5rem 2rem;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
     height         : 100%;
+
+    @include media-breakpoint-up(md) {
+      padding: 2rem;
+    }
   }
 
   &:is(:hover, :focus, :visited) {
@@ -31,19 +35,37 @@
     }
   }
 
+  .cog-icon-arrow {
+    @include media-breakpoint-down(md) {
+      height: rem(10px) !important;
+      width : rem(10px) !important;
+    }
+  }
+
   &--cover {
     background-repeat: no-repeat;
     background-size  : cover;
     max-height       : 100%;
-    height           : 550px;
+    height           : 280px;
+
+    @include media-breakpoint-up(md) {
+      height: 550px;
+    }
 
     &__body {
       height        : 100%;
       flex-direction: column;
 
       padding: {
-        left : 3rem;
-        right: 3rem;
+        left : 1rem;
+        right: 1rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding: {
+          left : 3rem;
+          right: 3rem;
+        }
       }
     }
   }

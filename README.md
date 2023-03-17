@@ -1,5 +1,5 @@
 # cognixia
 
-node_modules
+# npm install - need to install npm
 
-Ds_store
+# npm run serve - to run the files

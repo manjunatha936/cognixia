@@ -1,5 +1,15 @@
+.fs-64 {
+    font-size  : rem(32px);
+    line-height: 38px;
+
+    @include media-breakpoint-up(md) {
+        font-size  : rem(64px) !important;
+        line-height: 120%;
+    }
+}
+
 .fs-36 {
-    font-size  : rem(25px);
+    font-size  : rem(20px);
     line-height: 120%;
 
     @include media-breakpoint-up(md) {
@@ -27,13 +37,22 @@
 }
 
 .fs-18 {
-    font-size  : rem(18px) !important;
-    line-height: 24px !important;
+    font-size  : rem(16px) !important;
+    line-height: 22px !important;
+
+    @include media-breakpoint-up(lg) {
+        font-size  : rem(18px) !important;
+        line-height: 24px !important;
+    }
 }
 
 .fs-16 {
-    font-size  : rem(16px) !important;
+    font-size  : rem(14px) !important;
     line-height: 150%;
+
+    @include media-breakpoint-up(lg) {
+        font-size: rem(16px) !important;
+    }
 }
 
 .fs-14 {

@@ -72,22 +72,4 @@ var invokeOnLoad = function invokeOnLoad() {
 
 invokeOnLoad();
 
-var swiper = new Swiper(".Myswiper", {
-  grabCursor: true,
-  slidesPerView: 3.7,
-  spaceBetween: 20,
-  speed: 1000,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination"
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});
-
 },{}]},{},[1])//# sourceMappingURL=main.js.map

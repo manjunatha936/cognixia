@@ -1,5 +1,28 @@
 .cog-client-list {
     &__item {
-        margin-bottom: 2.5rem !important;
+        margin-bottom: .5rem !important;
+
+        @include media-breakpoint-down(md) {
+            img {
+                transform: scale(.7);
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 2.5rem !important;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        flex-wrap : unset !important;
+        overflow-x: scroll;
+    }
+}
+
+
+.cog-play-icon {
+    @include media-breakpoint-down(md) {
+        height: rem(24px);
+        width : rem(24px);
     }
 }

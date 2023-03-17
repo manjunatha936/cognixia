@@ -1,4 +1,22 @@
-.cog-nav-link {
-    text-decoration: none;
-    color          : var(--bs-black);
+.cog-nav {
+    @include media-breakpoint-down(md) {
+        gap: rem(24px);
+    }
+
+    &-link {
+        text-decoration: none;
+        color          : var(--bs-black);
+    }
+}
+
+.cog-brandlogo-sm {
+    @include media-breakpoint-down(md) {
+        height: rem(34px);
+    }
+}
+
+.hstack {
+    @include media-breakpoint-down(md) {
+        justify-content: center;
+    }
 }

@@ -1,7 +1,12 @@
 .cog-circle {
-    height       : rem(48px);
-    width        : rem(48px);
+    height       : rem(34px);
+    width        : rem(34px);
     border-radius: 50%;
     border       : 1px solid var(--bs-bg-primary);
     @extend .cog-flexcenter;
+
+    @include media-breakpoint-up(md) {
+        height: rem(48px);
+        width : rem(48px);
+    }
 }

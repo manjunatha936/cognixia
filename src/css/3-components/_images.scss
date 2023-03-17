@@ -16,7 +16,17 @@
 
 .cogximg650 {
     max-height: 100%;
-    height    : 650px;
+    height    : 267px;
+
+    @include media-breakpoint-down(md) {
+        max-width : 100%;
+        object-fit: cover;
+        width     : 100%;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 650px;
+    }
 }
 
 .cogximg198 {
@@ -25,4 +35,14 @@
 
 .cogximgh330 {
     height: 330px;
+}
+
+.cogximg202 {
+    height: rem(202px);
+    width : rem(202px);
+}
+
+.cogximg161 {
+    height: rem(161px);
+    width : rem(161px);
 }

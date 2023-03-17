@@ -1,9 +1,9 @@
 .cog-btn {
   font-size      : rem(14px);
   line-height    : rem(24px);
-  width          : 168px;
+  width          : 148px;
   max-width      : 100%;
-  padding        : .95rem 2rem;
+  padding        : .65rem 2rem;
   text-decoration: none;
   border-radius  : var(--bs-border-radius-pill);
   font-weight    : var(--bs-font-weight500);
@@ -11,6 +11,11 @@
   @extend .cog-flexcenter;
   transition: $transition;
   z-index   : 1;
+
+  @include media-breakpoint-up(md) {
+    width  : 168px;
+    padding: .95rem 2rem;
+  }
 
   &--pri {
     background: var(--bs-bg-primary) !important;
@@ -40,8 +45,12 @@
   }
 
   &--lg {
-    width    : 268px;
+    width    : 211px;
     max-width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 268px;
+    }
   }
 
   &:is(:hover, :focus, :visited) {
@@ -50,12 +59,17 @@
 }
 
 .cog-btn-md {
-  width    : 191px;
-  max-width: 100%;
+  width       : 191px;
+  max-width   : 100%;
+  border-width: 2px !important;
 }
 
 // Video button styles
 
 .cog-play-txt {
   color: var(--bs-link-color);
+
+  @include media-breakpoint-down(md) {
+    font-size: rem(14px) !important;
+  }
 }

@@ -11,20 +11,31 @@
 }
 
 .cog-shape-ellipse {
-    background   : var(--bs-white);
-    height       : rem(138px);
-    width        : 100%;
-    max-width    : 100%;
-    border-radius: 50%;
-    z-index      : 10;
+    @include media-breakpoint-up(md) {
+        background   : var(--bs-white);
+        height       : rem(138px);
+        width        : 102%;
+        max-width    : 102%;
+        border-radius: 50%;
+        z-index      : 10;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width    : 100%;
+        max-width: 100%;
+    }
 }
 
 .cog-top {
-    position: absolute;
-    top     : -4rem;
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        top     : -4rem;
+    }
 }
 
 .cog-bottom {
-    position: absolute;
-    bottom  : -4rem;
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        bottom  : -4rem;
+    }
 }

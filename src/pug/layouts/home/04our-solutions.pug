@@ -1,12 +1,13 @@
 section.section-padding100.position-relative
     .container
-        .row.text-center.mb-3.mb-md-4.pb-md-5
-            h3.h3.fw-bold Our Solutions
-            p.cog-lead Scroll through our solutions to unlock the power of your talent and organization for digital.
+        .row.text-center.mb-md-4.pb-5
+            .col-12
+                h3.h3.fw-bold Our Solutions
+                p.cog-lead Scroll through our solutions to unlock the power of your talent and organization for digital.
     
-    .container-fluid.px-0.position-relative
+    .container-fluid.px-0.position-relative.px-5.px-md-0
         .cog-shape-ellipse.cog-top
-        .row
+        .row.px-3.px-md-0
             .swiper.Myswiper
                 .swiper-wrapper
                     .swiper-slide
@@ -31,6 +32,7 @@ section.section-padding100.position-relative
                     .swiper-slide
                         +Slidercard("./img/home/solution/digital-minder.png", "Organization Transformation", "Infuse new digital-ready talent")
     
+            .swiper-pagination.cog-pagination-btm.d-block.d-md-none
             // Swiper paginatin arrows
             .cog-arrows-container
                 .cog-btn-circle.swiper-button-prev

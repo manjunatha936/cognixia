@@ -1,11 +1,19 @@
 .cog-arrows-container {
-    position : absolute;
-    bottom   : -1.5rem;
-    z-index  : 100;
-    left     : 0;
-    right    : 0;
-    max-width: 135px;
-    margin   : auto;
+    position: absolute;
+    bottom  : 50%;
+    z-index : 100;
+    left    : 0;
+    right   : 0;
+    margin  : auto;
+
+    @include media-breakpoint-down(md) {
+        transform: translateY(50%);
+    }
+
+    @include media-breakpoint-up(md) {
+        max-width: 135px;
+        bottom   : -1.5rem;
+    }
 
     .swiper-button-next:after,
     .swiper-button-prev:after {
@@ -15,8 +23,13 @@
 
 .swiper-button-prev {
     transform: rotate(180deg);
+
+    @include media-breakpoint-down(md) {
+        left: 10px;
+    }
 }
 
+// Button circles
 .cog-btn-circle {
     height       : rem(50px);
     width        : rem(50px);
@@ -26,4 +39,9 @@
     .cog-icon-arrow path {
         fill: var(--bs-white);
     }
+}
+
+// Pagination
+.cog-pagination-btm {
+    bottom: -2.5rem !important;
 }
