@@ -5,7 +5,8 @@
 }
 
 .cog-imgfit {
-    max-width: 100%;
+    max-width : 100%;
+    object-fit: cover;
 }
 
 .max-h-100 {
@@ -45,4 +46,8 @@
 .cogximg161 {
     height: rem(161px);
     width : rem(161px);
+}
+
+.cogximg345 {
+    height: rem(345px);
 }

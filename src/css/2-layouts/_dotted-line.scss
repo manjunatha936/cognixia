@@ -5,4 +5,9 @@
     transform: translate(-50%, -50%);
     bottom   : 0;
     overflow : hidden;
+
+    &--btm {
+        top   : unset !important;
+        bottom: -11%;
+    }
 }

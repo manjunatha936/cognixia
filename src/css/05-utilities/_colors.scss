@@ -24,6 +24,10 @@
     color: var(--bs-bg-primary);
 }
 
+.cog-clr-secondary {
+    color: var(--bs-secondary);
+}
+
 .cog-clr-black {
     color: var(--bs-black);
 }
@@ -49,5 +53,14 @@
 
     &--pri {
         background: var(--bs-bg-gradient);
+    }
+
+    &--lght {
+        background: linear-gradient(180deg, #F3F9FF 0%, rgba(243, 249, 255, 0) 100%) !important;
+        height    : 95px;
+
+        @include media-breakpoint-up(md) {
+            height: 308px;
+        }
     }
 }

@@ -1,0 +1,21 @@
+doctype html
+html(lang="en", data-page="Privacy-policy" dir="ltr")
+	head
+		include ./pug/base/head.pug
+		+head("")
+	
+	body.cog-globaltp
+		include ./pug/base/header.pug
+		main.position-relative
+			.cog-bg-gradient.cog-bg-gradient--lght
+			//- //Banner
+			include ./pug/layouts/privacy-policy/main.pug
+		
+		//- Footer
+		include ./pug/base/footer.pug
+
+
+		//scripts
+		include ./pug/base/scripts.pug
+		script(defer src="./js/home.js")
+		script(defer src="./js/main.js")

@@ -32,6 +32,16 @@
 
     @include media-breakpoint-up(lg) {
         font-size  : rem(24px) !important;
+        line-height: 125% !important;
+    }
+}
+
+.fs-20 {
+    font-size  : rem(16px) !important;
+    line-height: rem(24px) !important;
+
+    @include media-breakpoint-up(lg) {
+        font-size  : rem(20px) !important;
         line-height: 150% !important;
     }
 }

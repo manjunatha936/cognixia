@@ -69,6 +69,12 @@
       }
     }
   }
+
+  // figure
+  &__figwrap {
+    margin-top: rem(-40px);
+  }
+
 }
 
 .no-hover {
@@ -91,5 +97,12 @@
       left : rem(40px);
       right: rem(40px);
     }
+  }
+}
+
+.cog-card-h240 {
+  @include media-breakpoint-up(md) {
+    height    : rem(240px);
+    max-height: 100%;
   }
 }
