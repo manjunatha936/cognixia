@@ -1,0 +1,24 @@
+.cog-client-listbox {
+    &__item {
+        background-color: var(--bs-white);
+        height          : rem(220px);
+        border-radius   : var(--bs-border-radius-xs);
+    }
+}
+
+.cog-feature {
+    background   : var(--bs-bg-secondary) !important;
+    margin-bottom: 0 !important;
+
+    @include media-breakpoint-up(md) {
+        height: 100%;
+    }
+
+    padding: {
+        top   : rem(37px);
+        bottom: rem(37px);
+        left  : rem(10px);
+        right : rem(10px);
+    }
+
+}

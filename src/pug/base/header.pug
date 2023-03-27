@@ -1,4 +1,4 @@
-header(class="header-pin" id="header")
+header.position-relative(class="header-pin" id="header")
   .nav.navbar.navbar-expand-lg.navbar-overide
     .container
       // brand logo
@@ -11,8 +11,15 @@ header(class="header-pin" id="header")
       //Header nav-list
       #navbarText.collapse.navbar-collapse
           ul.navbar-nav.ms-auto.mb-2.mb-lg-0.gap-5
+            li.nav-item.dropdown
+              a.cog-nav-link.dropdown-toggle.active(aria-current='page' href='javascript:void(0);' id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Capabilities 
+              //- // Megamenu
+              //- .dropdown-menu.mega-menu
+              //-   .container
+              //-     .row
+              //-       h2 hello every one
+              
               li.nav-item
-                  a.cog-nav-link.active(aria-current='page' href='javascript:void(0);') Capabilities
-              li.nav-item
-                  a.cog-nav-link(href='javascript:void(0);') About Us
+                  a.cog-nav-link(href='about-us.html') About Us
           a.cog-btn.cog-btn--pri.ms-md-5(href="javascript:void(0);") Get in touch
+

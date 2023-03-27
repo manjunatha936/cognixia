@@ -88,3 +88,20 @@ header .navbar {
         height: rem(45px);
     }
 }
+
+// Header dropdown
+
+.mega-menu {
+    width           : 100%;
+    display         : none;
+    position        : absolute;
+    left            : 0;
+    top             : 100%;
+    background-color: #fff;
+    padding         : 20px;
+    z-index         : 9999;
+}
+
+.nav-item:hover .mega-menu {
+    display: block;
+}

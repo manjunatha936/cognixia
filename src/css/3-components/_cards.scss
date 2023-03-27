@@ -5,6 +5,25 @@
   cursor       : pointer;
   transition   : $transition;
 
+  &--pri {
+    background   : var(--bs-blue-light);
+    border-radius: var(--bs-border-radius-xs);
+    position     : relative;
+    overflow     : hidden;
+    z-index      : 2;
+    padding      : rem(20px);
+    height       : 300px;
+    max-height   : 100%;
+
+    .cog-card__body {
+      justify-content: center;
+    }
+
+    &:is(:hover, :focus, :visited) {
+      color: var(--bs-secondary) !important;
+    }
+  }
+
   &__body {
     padding        : 1.5rem 1.6rem 1.5rem 2rem;
     display        : flex;

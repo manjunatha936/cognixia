@@ -1,5 +1,3 @@
-
-
 .navbar-nav {
   align-items: center;
 }
@@ -7,28 +5,3 @@
 .tn-navbtn {
   margin-left: 1rem;
 }
-
-// Header widget sticky onscrolll
-
-// .em-widgetsticky-wrap {
-//   min-height: 100px;
-
-//   &__info {
-//     display    : flex;
-//     align-items: center;
-//     width      : 90%;
-//     // expaning
-
-//     &.expanded {
-//       .em-header-widgetpanel {
-//         display   : none;
-//         transition: all 0.5s ease;
-//       }
-
-//       .em-header-widgetnav {
-//         display   : flex;
-//         transition: all 0.5s ease;
-//       }
-//     }
-//   }
-// }
