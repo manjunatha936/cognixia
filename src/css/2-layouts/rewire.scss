@@ -1,8 +1,12 @@
 .cog-client-listbox {
     &__item {
         background-color: var(--bs-white);
-        height          : rem(220px);
+        height          : rem(100px);
         border-radius   : var(--bs-border-radius-xs);
+
+        @include media-breakpoint-up(md) {
+            height: rem(220px);
+        }
     }
 }
 

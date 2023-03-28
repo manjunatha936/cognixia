@@ -1,6 +1,18 @@
 .cog-circle-lg {
-    height          : rem(80px);
-    width           : rem(80px);
+    height          : rem(54px);
+    width           : rem(54px);
     border-radius   : var(--bs-border-radius-xxl);
-    background-color: var(--bs-bg-primary);
+    background-color: var(--bs-light-blue);
+    border          : 1px solid #D0E0F5;
+
+    @include media-breakpoint-up(md) {
+        height: rem(80px);
+        width : rem(80px);
+    }
+}
+
+.cog-mob-scaledown {
+    @include media-breakpoint-down(md) {
+        transform: scale(.7);
+    }
 }

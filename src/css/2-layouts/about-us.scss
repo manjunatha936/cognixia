@@ -1,13 +1,20 @@
 .cog-leadtitle {
     @extend .fs-24;
     display: block;
+
+    @include media-breakpoint-down(md) {
+        font-size: rem(16px) !important;
+    }
 }
 
 .cog-content-list {
     &__item {
-        border-top   : 2px solid var(--bs-border-color);
-        padding-top  : rem(20px) !important;
-        margin-bottom: rem(20px) !important;
+        padding-top: rem(20px) !important;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem(20px) !important;
+            border-top   : 2px solid var(--bs-border-color);
+        }
     }
 }
 
@@ -17,10 +24,16 @@
 
     &__content {
         position: absolute;
-        left    : rem(25px);
-        right   : rem(25px);
-        bottom  : rem(20px);
+        left    : rem(14px);
+        right   : rem(20px);
+        bottom  : rem(16px);
         color   : var(--bs-white);
+
+        @include media-breakpoint-up(md) {
+            left  : rem(25px);
+            right : rem(25px);
+            bottom: rem(20px);
+        }
     }
 }
 
@@ -36,9 +49,13 @@
 }
 
 .cog-gradient-heading {
-    font-size  : rem(48px);
-    line-height: rem(58px);
+    font-size  : rem(34px);
+    line-height: rem(44px);
     font-weight: 800;
+
+    @include media-breakpoint-up(md) {
+        font-size: rem(48px);
+    }
 }
 
 .cog-text-gradient {

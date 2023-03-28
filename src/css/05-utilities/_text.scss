@@ -3,6 +3,10 @@
     line-height: 38px;
 
     @include media-breakpoint-up(md) {
+        font-size: rem(44px) !important;
+    }
+
+    @include media-breakpoint-up(lg) {
         font-size  : rem(64px) !important;
         line-height: 120%;
     }

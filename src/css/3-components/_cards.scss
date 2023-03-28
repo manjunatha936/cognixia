@@ -105,7 +105,11 @@
 .cog-card-vr {
   position      : relative;
   z-index       : 1;
-  padding-bottom: rem(120px);
+  padding-bottom: rem(48px);
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: rem(120px);
+  }
 
   &:last-child {
     padding-bottom: 0;
@@ -113,15 +117,24 @@
 
   &__body {
     padding: {
-      left : rem(40px);
-      right: rem(40px);
+      right: rem(10px);
+      left : rem(10px);
+    }
+
+    @include media-breakpoint-up(md) {
+      padding: {
+        left : rem(40px);
+        right: rem(40px);
+      }
     }
   }
 }
 
 .cog-card-h240 {
+  height    : rem(221px);
+  max-height: 100%;
+
   @include media-breakpoint-up(md) {
-    height    : rem(240px);
-    max-height: 100%;
+    height: rem(240px);
   }
 }
