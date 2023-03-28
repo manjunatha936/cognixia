@@ -102,7 +102,7 @@ get_header();
 </svg></a>
                 </div>
               </div>
-            </div>
+            </div> 
 			<?php } ?>
             <!-- <div class="col-md-4">
               <div class="cog-card bg-white">
