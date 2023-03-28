@@ -141,10 +141,12 @@ get_header();
                 <div class="container">
                     <div class="row text-center mb-md-4 pb-5">
                         <div class="col-12 col-lg-10 col-xxl-8 mx-auto">
-                            <h3 class="h3 fw-bold">Training Areas</h3>
-                            <p class="cog-lead">Scroll through Cognixia's most popular training domains. Access to
-                                Cognixia’s library of over 2500 hours of training through 39 unique courses across 9
-                                domains to accelerate your career</p>
+                            <h3 class="h3 fw-bold">
+                                <?php echo get_field('training_area_section_heading'); ?>
+                            </h3>
+                            <p class="cog-lead">
+                                <?php echo get_field('training_area_section_description'); ?>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -153,74 +155,24 @@ get_header();
                     <div class="row px-3 px-md-0">
                         <div class="swiper Myswiper-rewire">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
-                                        style="background-image: url('./img/home/solution/organization.png');">
-                                        <div class="cog-card--cover__body text-white cog-flexcenter text-center">
-                                            <h4 class="fs-32 fw-xbold">Cloud Computing</h4>
-                                            <p class="cog-lead text-white fs-18">AWS, Microsoft Azure, Openshift,
-                                                Openstack, Pivotal Cloud Foundry</p>
+                                <?php if (have_rows('training_area_section_repeater')):
+                                    while (have_rows('training_area_section_repeater')):
+                                        the_row(); ?>
+                                        <div class="swiper-slide">
+                                            <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
+                                                style="background-image: url('<?php echo get_sub_field('training_area_section_repeater'); ?>');">
+                                                <div class="cog-card--cover__body text-white cog-flexcenter text-center">
+                                                    <h4 class="fs-32 fw-xbold">
+                                                        <?php echo get_sub_field('training_area_section_repeater_content'); ?>
+                                                    </h4>
+                                                    <p class="cog-lead text-white fs-18">
+                                                        <?php echo get_sub_field('training_area_section_repeater_description'); ?>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
-                                        style="background-image: url('./img/home/solution/digital-minder.png');">
-                                        <div class="cog-card--cover__body text-white cog-flexcenter text-center">
-                                            <h4 class="fs-32 fw-xbold">DevOps</h4>
-                                            <p class="cog-lead text-white fs-18">Docker, Kubernetes, Infrastructure
-                                                Automation, Spring Framework DevOps on AWS</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
-                                        style="background-image: url('./img/home/solution/change-adoption.png');">
-                                        <div class="cog-card--cover__body text-white cog-flexcenter text-center">
-                                            <h4 class="fs-32 fw-xbold">Machine Learning &amp; Artificial Intelligence
-                                            </h4>
-                                            <p class="cog-lead text-white fs-18">Python, Neural Networks, Hyper
-                                                Parameter Tuning and IBM Watson</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
-                                        style="background-image: url('./img/home/solution/digital-minder.png');">
-                                        <div class="cog-card--cover__body text-white cog-flexcenter text-center">
-                                            <h4 class="fs-32 fw-xbold">Robotic Process Automation</h4>
-                                            <p class="cog-lead text-white fs-18">Blueprism, Uipath and PEGA OpenSpan.
-                                                Cognixia is an official Training Partner for Automation Anywhere</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
-                                        style="background-image: url('./img/home/solution/organization.png');">
-                                        <div class="cog-card--cover__body text-white cog-flexcenter text-center">
-                                            <h4 class="fs-32 fw-xbold">Organization Transformation</h4>
-                                            <p class="cog-lead text-white fs-18">Infuse new digital-ready talent</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
-                                        style="background-image: url('./img/home/solution/change-adoption.png');">
-                                        <div class="cog-card--cover__body text-white cog-flexcenter text-center">
-                                            <h4 class="fs-32 fw-xbold">Organization Transformation</h4>
-                                            <p class="cog-lead text-white fs-18">Infuse new digital-ready talent</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="cog-card cog-card--cover rounded-0 border-0 no-hover cog-flexcenter cog-bg-theme"
-                                        style="background-image: url('./img/home/solution/digital-minder.png');">
-                                        <div class="cog-card--cover__body text-white cog-flexcenter text-center">
-                                            <h4 class="fs-32 fw-xbold">Organization Transformation</h4>
-                                            <p class="cog-lead text-white fs-18">Infuse new digital-ready talent</p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                    <?php endwhile; endif; ?>
                             </div>
                         </div>
                         <div class="swiper-pagination cog-pagination-btm d-block d-md-none"></div>
@@ -249,42 +201,25 @@ get_header();
             <section class="cog-bg-primary section-padding100">
                 <div class="container">
                     <div class="col-11 mx-auto col-md-12 col-lg-10 col-xxl-8 text-center mb-md-5">
-                        <h3 class="h3 fw-bold mb-4">Certifications</h3>
-                        <p class="cog-lead fs-24">Cognixia is proud to partner with leading technology companies to
-                            provide official certification curriculum across a number of disciplines</p>
+                        <h3 class="h3 fw-bold mb-4">
+                            <?php echo get_field('certification_section_heading'); ?>
+                        </h3>
+                        <p class="cog-lead fs-24">
+                            <?php echo get_field('certification_section_description'); ?>
+                        </p>
                     </div>
                     <div class="col-xl-10 mx-auto">
                         <ul class="row cog-client-listbox row-cols-lg-3 text-center">
-                            <li class="col-md-4">
-                                <div class="cog-client-listbox__item cog-flexcenter m-2"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/certifications/service-now.svg"
-                                        alt="service-now Logo"></div>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="cog-client-listbox__item cog-flexcenter m-2"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/certifications/microsoft.svg"
-                                        alt="Microsoft Logo"></div>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="cog-client-listbox__item cog-flexcenter m-2"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/certifications/Aws-certification.svg"
-                                        alt="Aws Certification Logo"></div>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="cog-client-listbox__item cog-flexcenter m-2"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/certifications/automation-anewhere.svg"
-                                        alt="Automation Logo"></div>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="cog-client-listbox__item cog-flexcenter m-2"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/certifications/red-hat.svg"
-                                        alt="Red Hat Logo"></div>
-                            </li>
-                            <li class="col-md-4">
-                                <div class="cog-client-listbox__item cog-flexcenter m-2"><img
-                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/certifications/isc.svg"
-                                        alt="ISC Logo"></div>
-                            </li>
+                            <?php if (have_rows('certification_section_repeater')):
+                                while (have_rows('certification_section_repeater')):
+                                    the_row(); ?>
+                                    <li class="col-md-4">
+                                        <div class="cog-client-listbox__item cog-flexcenter m-2"><img
+                                                src="<?php echo get_sub_field('certification_section_repester_image');?>"
+                                                alt="service-now Logo"></div>
+                                    </li>
+                                <?php endwhile; endif; ?>
+                           
                         </ul>
                     </div>
                 </div>
@@ -292,46 +227,26 @@ get_header();
             <!--05-->
             <section class="section-padding100 position-relative">
                 <div class="container">
-                    <h3 class="h3 fw-bold text-center mb-md-4 pb-5">Our span of Impact</h3>
+                    <h3 class="h3 fw-bold text-center mb-md-4 pb-5"><?php  echo get_field('our_impact_heading');?></h3>
                     <div class="row">
                         <div class="col-lg-10 col-xxl-8 mx-auto">
                             <div class="row row-cols-lg-4 text-center g-3">
+                            <?php if (have_rows('our_span_section_repeater_')):
+                                while (have_rows('our_span_section_repeater_')):
+                                    the_row(); ?>
                                 <div class="col">
                                     <figure class="cog-feature"><img
-                                            src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/our-impact/countries.svg"
+                                            src="<?php  echo get_sub_field('our_span_section_image')?>"
                                             alt="countries icon">
-                                        <figcaption class="mt-3"><span class="fs-32 fw-xbold">45+</span>
-                                            <p class="cog-clr-black fs-18 mt-1">countries</p>
+                                        <figcaption class="mt-3"><span class="fs-32 fw-xbold"><?php  echo get_sub_field('our_span_section_repeater_no')?></span>
+                                            <p class="cog-clr-black fs-18 mt-1"><?php  echo get_sub_field('our_span_section_content')?></p>
                                         </figcaption>
                                     </figure>
                                 </div>
-                                <div class="col">
-                                    <figure class="cog-feature"><img
-                                            src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/our-impact/programs.svg"
-                                            alt="Programs icon">
-                                        <figcaption class="mt-3"><span class="fs-32 fw-xbold">450+</span>
-                                            <p class="cog-clr-black fs-18 mt-1">programs</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col">
-                                    <figure class="cog-feature"><img
-                                            src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/our-impact/trainers.svg"
-                                            alt="Trainners icon">
-                                        <figcaption class="mt-3"><span class="fs-32 fw-xbold">7,000+</span>
-                                            <p class="cog-clr-black fs-18 mt-1">trainers</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col">
-                                    <figure class="cog-feature"><img
-                                            src="<?php echo get_template_directory_uri(); ?>/assets/img/rewire/our-impact/trained.svg"
-                                            alt="Trainners icon">
-                                        <figcaption class="mt-3"><span class="fs-32 fw-xbold">130,000+</span>
-                                            <p class="cog-clr-black fs-18 mt-1">trained</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
+
+                               
+                                <?php endwhile; endif; ?> 
+                               
                             </div>
                         </div>
                     </div>

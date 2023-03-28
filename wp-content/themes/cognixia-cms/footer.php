@@ -58,6 +58,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script defer src="<?php echo get_template_directory_uri();?>/assets/js/home.js"></script>
     <script defer src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
+    <script defer src="<?php echo get_template_directory_uri();?>/assets/js/rewire.js"></script>
+    <script defer src="<?php echo get_template_directory_uri();?>/assets/js/DMC.js"></script>
 			
 <?php wp_footer(); ?>
 
