@@ -1,7 +1,7 @@
 <header class="header-pin" id="header">
   <div class="nav navbar navbar-expand-lg navbar-overide">
     <div class="container">
-      <!-- brand logo--><a class="navbar-brand" href="index.html"><img class="cog-brand-logo"
+      <!-- brand logo--><a class="navbar-brand" href="<?php echo get_site_url(); ?>"><img class="cog-brand-logo"
           src="<?php echo ot_get_option('header_logo') ?>" alt="Brand logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span
