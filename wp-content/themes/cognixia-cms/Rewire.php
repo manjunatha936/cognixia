@@ -1,4 +1,4 @@
-<?php /*Template Name:Jump*/
+<?php /*Template Name:Rewire*/
 /**
  * The main template file
  *

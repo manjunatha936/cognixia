@@ -77,7 +77,7 @@ get_header();
               while (have_rows('jump_section_repeater')) {
                 the_row();
                 if ($q % 2 == 0) {
-                  //echo $q;
+                  echo $q;
                   ?>
                   <div class="row cog-card-vr cog-flexcenter">
                     <div class="col-md-6">
