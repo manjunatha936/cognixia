@@ -23,6 +23,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/components.css" >
         <title><?php echo get_the_title();?></title>
   </head>
   

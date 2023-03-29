@@ -18,30 +18,129 @@ get_header();
 ?>
 
 <body>
-    <div class="wrapper">
-        <?php include_once 'inc/nav.php' ?>
-        <div class="empty-div"></div>
+  <div class="wrapper">
+    <?php include_once 'inc/nav.php' ?>
+    <div class="empty-div"></div>
 
-        <main class="position-relative">
+    <main class="position-relative">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div id="modal_cnt">
+              <div class="modal_scrl ">
+
+                <div class="modal-header p-sm-0">
+                  <h1 class="modal-title fs-5 my-md-4 modal_h1 pt-md-5" id="exampleModalLabel">How can we help you?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="form" data-parsley-validate="">
+                    <div class="row ">
+                      <div class="col-md-6 col-11 form_group">
+                        <label for="fullname">Name</label>
+                        <input type="text" class="form-control" name="fullname" data-parsley-required
+                          placeholder="Enter Name">
+                      </div>
+                      <div class="col-md-6 col-11 form_group">
+                        <label for="company">Company</label>
+                        <input type="company" class="form-control" name="company" data-parsley-required
+                          placeholder="Enter company name">
+                      </div>
+                      <div class="col-md-6 col-11 form_group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" class="form-control" data-parsley-type="number" name="phone"
+                          validateNumber data-parsley-maxlength="10" data-parsley-required
+                          placeholder="Enter mobile number">
+                      </div>
+                      <div class="col-md-6 col-11 form_group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" data-parsley-type="email"
+                          data-parsley-required placeholder="Enter email address">
+                      </div>
+
+                      <div class="col-11 col-md-12 form_group">
+                        <div class="row g-0">
+
+                          <label for="what">What digital solutions are interested in?</label>
+                          <select id="what" data-parsley-required>
+                            <option value=""></option>
+                            <option value="JUMP">JUMP</option>
+                            <option value="ReWire">ReWire</option>
+                            <option value="org">Organization Transformation</option>
+                            <option value="digital">Digital Mindset & Culture</option>
+                            <option value="change">Change & Adoption</option>
+                            <option value="Other">Other</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-11 col-md-12 form_group">
+                        <label class="form-label">How can we help you?</label>
+                        <textarea class="form-control" name="message" placeholder="Please enter your message" rows="4"
+                          cols="50"></textarea>
+                      </div>
+                    </div>
+                    <h6 class="mb-4 text-center by_txt d-md-block d-none"> By filling out this form and clicking submit,
+                      you acknowledge our privacy policy.</h6>
+                    <p id="error" class="parsley-error mb-4">Please fill all the mandatory fields to continue.</p>
+                    <button class="modal_submit cog-btn cog-btn--default mx-auto" type="submit">Submit</button>
+                  </form>
+
+                </div>
+              </div>
+              <div class="modal-footer d-md-block d-none">
+                <h4 class="mb-4">Contact Information</h4>
+                <div class="row g-0 align-items-end">
+                  <div class="col-md-4">
+                    <h6>Headquarters:
+                      110 Allen Road,Basking Ridge,NJ 07920</h6>
+                  </div>
+                  <div class="col-md-4 ps-4">
+                    <h6>Phone <a href="javascript:void(0);">+1-877-264-6424</a></h6>
+                  </div>
+                  <div class="col-md-4">
+                    <h6>Email<a href="javascript:void(0);"> info@cognixia.com</a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="successfull_msg" class="successfull_msg">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class=" success_lft position-relative"
+                    style="background-image: url(../dist/img/icons/modal_successlft.svg);background-repeat: no-repeat;border-bottom-left-radius:16px;border-top-left-radius:16px;">
+                    <img src="images/success_arrw.webp" class="img-fluid" alt="">
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="success_rght text-center">
+
+                    <img src="../dist/img/icons/success_tick.png" class="mb-4" alt="check-img">
+                    <h1 class="modal_h1 success_h1">Perfect. <br>
+                      We will be in touch soon.</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
       <div class="cog-bg-gradient cog-bg-gradient--lght"></div>
       <section class="cog-content-wrapper">
         <div class="container">
           <div class="row">
             <div class="col-xl-10 mx-auto">
-              <h1 class="h2 fw-xbold mb-3 mb-md-4 pb-md-2 cog-clr-darkgray">Privacy Policy</h1>
-              <p>Privacy of our valued customer is very important. We strongly believe that the personal information of our customers should not be shared with the third party without the prior consent or request from the customer. Privacy is the right of an individual and at Cognixia- A Collabera Learning Solutions Company, the information of the customer such as contact number, email ID, personal address, etc is used only for the internal purpose and not for sale. Your contact information is stored in our database and is only used to contact you during the course of your training with and after the announcement of our latest deals, news, etc. We at Cognixia condemn the unauthorized reach and misuse and/or disclosure of the personal information of the customer and we have strict guidelines and high-security features to prevent the same. Any changes in our ‘Privacy Policy’ will be posted here on the website.</p>
-              <h5>Secure Online Payments</h5>
-              <p>The visitor on our website please take a note that your name, email address, and other personal information submitted on our website may be stored with us and may also appear on the website. Like other platforms, our server log files also receives general information such as IP address of the visitor, cookie etc. For the financial transactions by credit card, Cognixia uses a 3rd party secure payment gateway provided by “PayU” and the credit card details are ‘not stored’ with, instead the Cognixia information is securely stored and encrypted with Visa/MasterCard.</p>
-              <h5>Smart Cookies</h5>
-              <p>We use ‘Cookies’ to keep track of your current shopping session to personalize your experience and so that you may retrieve your shopping cart at any time. ‘Cookies’ are tiny text files which our Website places on your computer’s hard drive to store information about your shopping session and to identify your computer.</p>
+              <h1 class="h2 fw-xbold mb-3 mb-md-4 pb-md-2 cog-clr-darkgray"><?php  echo get_field('privacy_policy_section_heading');?></h1>
+              <?php  echo get_field('privacy_policy_section_description');?>
             </div>
           </div>
         </div>
       </section>
     </main>
-       
-    </div>
-    <?php include_once 'footer.php'; ?>
+
+  </div>
+  <?php include_once 'footer.php'; ?>
 </body>
 
 </html>

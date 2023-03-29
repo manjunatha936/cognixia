@@ -26,8 +26,8 @@
             }
           } ?>
         </ul>
-
-        <a class="cog-btn cog-btn--pri ms-md-5" href="<?php echo ot_get_option('get_in_touch_link') ?>"><?php echo ot_get_option('get_in_touch_text') ?></a>
+       
+        <a class="cog-btn cog-btn--pri ms-md-5" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#exampleModal"><?php echo ot_get_option('get_in_touch_text') ?></a>
 
       </div>
     </div>
