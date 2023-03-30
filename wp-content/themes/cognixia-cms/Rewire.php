@@ -95,14 +95,14 @@ get_header();
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="row">
                         <div class="col-md-5" >
-                            <div class=" success_lft position-relative"style="background-image: url(../dist/img/icons/modal_successlft.svg);background-repeat: no-repeat;border-bottom-left-radius:16px;border-top-left-radius:16px;">
-                                <img src="images/success_arrw.webp" class="img-fluid" alt="">
+                            <div class=" success_lft position-relative"style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/dist/img/icons/modal_successlft.svg);background-repeat: no-repeat;border-bottom-left-radius:16px;border-top-left-radius:16px;">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/success_arrw.webp" class="img-fluid" alt="">
                             </div>
                         </div>
                         <div class="col-md-7">
                             <div class="success_rght text-center">
 
-                                <img src="../dist/img/icons/success_tick.png" class="mb-4" alt="check-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/icons/success_tick.png" class="mb-4" alt="check-img">
                                <h1 class="modal_h1 success_h1">Perfect. <br>
                                 We will be in touch soon.</h1>
                             </div>
