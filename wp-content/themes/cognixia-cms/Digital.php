@@ -25,53 +25,50 @@ get_header();
 
       
         <main>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div id="modal_cnt">
-                  <div class="modal_scrl ">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div id="modal_cnt">
+              <div class="modal_scrl ">
 
-                    <div class="modal-header p-sm-0">
-                      <h1 class="modal-title fs-5 my-md-4 modal_h1 pt-md-5" id="exampleModalLabel">How can we help you?</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                    <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]');?> 
-                           
-                    </div>
-                  </div>
-                    <div class="modal-footer d-md-block d-none">
-                      <h4 class="mb-4">Contact Information</h4>
-                      <div class="row g-0 align-items-end">
-                        <div class="col-md-4"><h6>Headquarters:
-                            110 Allen Road,Basking Ridge,NJ 07920</h6></div>
-                        <div class="col-md-4 ps-4"><h6>Phone <a href="javascript:void(0);">+1-877-264-6424</a></h6></div>
-                        <div class="col-md-4"><h6>Email<a href="javascript:void(0);"> info@cognixia.com</a></h6></div>
-                      </div>
-                    </div>
+                <div class="modal-header p-sm-0">
+                  <h1 class="modal-title fs-5 my-md-4 modal_h1 pt-md-5" id="exampleModalLabel">How can we help you?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div id="successfull_msg" class="successfull_msg">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="row">
-                        <div class="col-md-5" >
-                            <div class=" success_lft position-relative"style="background-image: url(../dist/img/icons/modal_successlft.svg);background-repeat: no-repeat;border-bottom-left-radius:16px;border-top-left-radius:16px;">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/success_arrw.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="success_rght text-center">
-
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/dist/img/icons/success_tick.png" class="mb-4" alt="check-img">
-                               <h1 class="modal_h1 success_h1">Perfect. <br>
-                                We will be in touch soon.</h1>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-body">
+                <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]');?> 
+                       
                 </div>
               </div>
-              
+                <div class="modal-footer d-md-block d-none">
+                  <h4 class="mb-4">Contact Information</h4>
+                  <div class="row g-0 align-items-end">
+                    <div class="col-md-4"><h6><?php echo ot_get_option('contact_information_headquaters') ?></h6></div>
+                    <div class="col-md-4 ps-4"><h6>Phone <a href="<?php echo ot_get_option('contact_form_footer_phone_link') ?>"><?php echo ot_get_option('contact_form_footer_no') ?></a></h6></div>
+                    <div class="col-md-4"><h6>Email<a href="<?php echo ot_get_option('contact_form_footer_Email_link') ?>"><?php echo ot_get_option('contact_form_footer_Email') ?></a></h6></div>
+                  </div>
+                </div>
+            </div>
+            <div id="successfull_msg" class="successfull_msg">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row">
+                    <div class="col-md-5" >
+                        <div class=" success_lft position-relative"style="background-image: url(../dist/img/icons/modal_successlft.svg);background-repeat: no-repeat;border-bottom-left-radius:16px;border-top-left-radius:16px;">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/images/success_tick.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="success_rght text-center">
+
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/icons/success_tick.png" class="mb-4" alt="check-img">
+                           <h1 class="modal_h1 success_h1">Perfect. <br>
+                            We will be in touch soon.</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
+          
+        </div>
       <!-- Banner-->
       <section class="cog-banner cog-bg-info">
         <div class="cog-banner__figwrap ms-auto">
