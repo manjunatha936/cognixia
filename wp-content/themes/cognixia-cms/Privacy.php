@@ -34,56 +34,7 @@ get_header();
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form id="form" data-parsley-validate="">
-                    <div class="row ">
-                      <div class="col-md-6 col-11 form_group">
-                        <label for="fullname">Name</label>
-                        <input type="text" class="form-control" name="fullname" data-parsley-required
-                          placeholder="Enter Name">
-                      </div>
-                      <div class="col-md-6 col-11 form_group">
-                        <label for="company">Company</label>
-                        <input type="company" class="form-control" name="company" data-parsley-required
-                          placeholder="Enter company name">
-                      </div>
-                      <div class="col-md-6 col-11 form_group">
-                        <label for="phone">Phone Number</label>
-                        <input id="phone" type="tel" class="form-control" data-parsley-type="number" name="phone"
-                          validateNumber data-parsley-maxlength="10" data-parsley-required
-                          placeholder="Enter mobile number">
-                      </div>
-                      <div class="col-md-6 col-11 form_group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" data-parsley-type="email"
-                          data-parsley-required placeholder="Enter email address">
-                      </div>
-
-                      <div class="col-11 col-md-12 form_group">
-                        <div class="row g-0">
-
-                          <label for="what">What digital solutions are interested in?</label>
-                          <select id="what" data-parsley-required>
-                            <option value=""></option>
-                            <option value="JUMP">JUMP</option>
-                            <option value="ReWire">ReWire</option>
-                            <option value="org">Organization Transformation</option>
-                            <option value="digital">Digital Mindset & Culture</option>
-                            <option value="change">Change & Adoption</option>
-                            <option value="Other">Other</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-11 col-md-12 form_group">
-                        <label class="form-label">How can we help you?</label>
-                        <textarea class="form-control" name="message" placeholder="Please enter your message" rows="4"
-                          cols="50"></textarea>
-                      </div>
-                    </div>
-                    <h6 class="mb-4 text-center by_txt d-md-block d-none"> By filling out this form and clicking submit,
-                      you acknowledge our privacy policy.</h6>
-                    <p id="error" class="parsley-error mb-4">Please fill all the mandatory fields to continue.</p>
-                    <button class="modal_submit cog-btn cog-btn--default mx-auto" type="submit">Submit</button>
-                  </form>
+                <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]');?> 
 
                 </div>
               </div>
