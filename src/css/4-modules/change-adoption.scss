@@ -16,3 +16,10 @@
         transform: scale(.7);
     }
 }
+
+.cog-mob-lyrev {
+    @include media-breakpoint-down(md) {
+        display       : flex;
+        flex-direction: column;
+    }
+}

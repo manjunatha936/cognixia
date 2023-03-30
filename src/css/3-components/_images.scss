@@ -39,13 +39,23 @@
 }
 
 .cogximg202 {
-    height: rem(202px);
-    width : rem(202px);
+    height: rem(151px);
+    width : rem(151px);
+
+    @include media-breakpoint-up(md) {
+        height: rem(202px);
+        width : rem(202px);
+    }
 }
 
 .cogximg161 {
-    height: rem(161px);
-    width : rem(161px);
+    height: rem(121px);
+    width : rem(121px);
+
+    @include media-breakpoint-up(md) {
+        height: rem(161px);
+        width : rem(161px);
+    }
 }
 
 .cogximg345 {

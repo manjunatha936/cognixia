@@ -34,8 +34,8 @@ body {
 section {
   @include media-breakpoint-down(md) {
     padding : {
-      left : rem(10px) !important;
-      right: rem(10px) !important;
+      left : rem(8px) !important;
+      right: rem(8px) !important;
     }
   }
 }
@@ -43,6 +43,12 @@ section {
 .cog-mob-p0 {
   @include media-breakpoint-down(md) {
     padding: 0 !important;
+  }
+}
+
+.cog-mob-pb0 {
+  @include media-breakpoint-down(md) {
+    padding-bottom: 1rem !important;
   }
 }
 

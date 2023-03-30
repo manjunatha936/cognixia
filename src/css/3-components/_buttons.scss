@@ -64,6 +64,11 @@
   border-width: 2px !important;
 }
 
+.cog-link {
+  color          : var(--bs-gray-100);
+  text-decoration: none;
+}
+
 // Video button styles
 
 .cog-play-txt {

@@ -18,6 +18,11 @@ header .navbar {
             padding: .6rem 0.4rem;
         }
     }
+
+    .nav-item {
+        padding: 1rem 0 !important;
+        cursor : pointer;
+    }
 }
 
 .navbar-overide {
@@ -80,28 +85,84 @@ header .navbar {
 }
 
 // Nav-links
-
 .cog-brand-logo {
-    height: rem(35px);
+    height    : rem(40px);
+    object-fit: contain;
 
     @include media-breakpoint-up(md) {
         height: rem(45px);
     }
 }
 
+.cog-megalink {
+    transform: $transition;
+    color    : var(--bs-cog-clr-secondary) !important;
+
+    &:is(:hover, :focus) {
+        transform: $transition;
+        color    : var(--bs-bg-primary) !important;
+    }
+
+    @include media-breakpoint-down(md) {
+        h6 {
+            font-weight: var(--bs-font-weight500) !important;
+        }
+    }
+}
+
 // Header dropdown
-
-.mega-menu {
-    width           : 100%;
-    display         : none;
-    position        : absolute;
-    left            : 0;
-    top             : 100%;
-    background-color: #fff;
-    padding         : 20px;
-    z-index         : 9999;
+header .dropdown-menu {
+    border-radius: 0 !important;
+    border       : none !important;
+    z-index      : -1;
+    background   : transparent;
 }
 
-.nav-item:hover .mega-menu {
-    display: block;
+@include media-breakpoint-up(md) {
+    header .dropdown-menu {
+        background: var(--bs-white);
+    }
+
+    .cog-menu-max980 {
+        width    : 980px;
+        max-width: 100%;
+    }
+
+    header .mega-submenu {
+        left: 100%;
+        top : 0;
+    }
+
+    .cog-mega-menu {
+        position: static;
+    }
+
+    .mega-menu {
+        left        : 0;
+        right       : 0;
+        width       : 100%;
+        // transform: $transition;
+
+        padding: {
+            top   : 2.5rem;
+            bottom: 3.5rem;
+        }
+    }
+
+    header .dropdown-menu li {
+        position: relative;
+    }
+
+    header .dropdown-menu .submenu {
+        display: block;
+        left   : 100%;
+        top    : 0;
+    }
+
+    header .dropdown-menu>li:hover>.submenu,
+    header .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
 }
+
+// Mobile styling

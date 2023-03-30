@@ -1,13 +1,43 @@
 .cog-client-listbox {
     &__item {
+        position        : relative;
         background-color: var(--bs-white);
         height          : rem(100px);
         border-radius   : var(--bs-border-radius-xs);
+        cursor          : pointer;
+        transition      : $transition;
+
+        @include media-breakpoint-down(md) {
+            padding: {
+                left : 1rem;
+                right: 1rem;
+            }
+        }
 
         @include media-breakpoint-up(md) {
             height: rem(220px);
         }
+
+        &:is(:hover, :focus, :visited) {
+            transition: $transition;
+
+            .cog-client-listbox-hover-cnt {
+                display: flex;
+            }
+        }
     }
+}
+
+.cog-client-listbox-hover-cnt {
+    position      : absolute;
+    left          : 0;
+    right         : 0;
+    background    : var(--bs-white);
+    bottom        : 0;
+    display       : none;
+    top           : 0;
+    flex-direction: column;
+    transition    : $transition;
 }
 
 .cog-feature {
@@ -19,10 +49,20 @@
     }
 
     padding: {
-        top   : rem(37px);
-        bottom: rem(37px);
+        top   : rem(25px);
+        bottom: rem(25px);
         left  : rem(10px);
         right : rem(10px);
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: {
+            top   : rem(37px);
+            bottom: rem(37px);
+            left  : rem(10px);
+            right : rem(10px);
+        }
+
     }
 
 }

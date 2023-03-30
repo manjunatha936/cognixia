@@ -93,7 +93,6 @@
   &__figwrap {
     margin-top: rem(-40px);
   }
-
 }
 
 .no-hover {
@@ -105,7 +104,7 @@
 .cog-card-vr {
   position      : relative;
   z-index       : 1;
-  padding-bottom: rem(48px);
+  padding-bottom: rem(55px);
 
   @include media-breakpoint-up(md) {
     padding-bottom: rem(120px);
@@ -136,5 +135,28 @@
 
   @include media-breakpoint-up(md) {
     height: rem(240px);
+  }
+}
+
+.cog-cardhover {
+  cursor    : pointer;
+  transition: $transition;
+
+  .cog-card__des {
+    display   : none;
+    transition: $transition;
+  }
+
+  &:is(:hover, :focus) {
+    transition: $transition;
+
+    h4 {
+      display: none;
+    }
+
+    .cog-card__des {
+      transition: $transition;
+      display   : block;
+    }
   }
 }

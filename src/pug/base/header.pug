@@ -5,20 +5,39 @@ header.position-relative(class="header-pin" id="header")
       a.navbar-brand(href='index.html')
           img.cog-brand-logo(src="./img/icons/brand-logo.svg" alt="Brand logo")
       
-      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
+      button.navbar-toggler.border-0(type='button' data-bs-toggle='collapse' data-bs-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+        img(src="./img/hamberg-icon.svg" alt="Hamberg-icon")
       
       //Header nav-list
       #navbarText.collapse.navbar-collapse
-          ul.navbar-nav.ms-auto.mb-2.mb-lg-0.gap-5
-            li.nav-item.dropdown
-              a.cog-nav-link.dropdown-toggle.active(aria-current='page' href='javascript:void(0);' id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Capabilities 
-              //- // Megamenu
-              //- .dropdown-menu.mega-menu
-              //-   .container
-              //-     .row
-              //-       h2 hello every one
+          ul.navbar-nav.ms-auto.mb-2.mb-lg-0.gap-md-5
+            li.nav-item.dropdown.cog-mega-menu
+              a.cog-nav-link.active.dropdown-toggle(aria-current='page' href='javascript:void(0);' data-bs-toggle="dropdown") Capabilities 
               
+              // Megamenu
+              .dropdown-menu.mega-menu
+                .container.cog-menu-max980
+                  .row.row-cols-1.row-cols-md-3
+                    a.col.cog-nav-link.cog-megalink.pt-md-4.mb-2(href='jump.html')
+                      h6.fs-18.fw-bold.mb-1 JUMP
+                      p.cog-clr-darkgray.fs-16.d-none.d-md-block Infuse new digital-ready talent
+                    
+                    a.col.cog-nav-link.cog-megalink.pt-md-4.mb-2(href='DMC.html')
+                      h6.fs-18.fw-bold.mb-1 Digital Mindset &amp; Culture
+                      p.cog-clr-darkgray.fs-16.d-none.d-md-block Ensuring digital transformation
+                   
+                    a.col.cog-nav-link.cog-megalink.pt-md-4.mb-2(href='change-adoption.html')
+                      h6.fs-18.fw-bold.mb-1 Change &amp; Managment
+                      p.cog-clr-darkgray.fs-16.d-none.d-md-block Super charge &amp; De-Risk digital products
+                    
+                    a.col.cog-nav-link.cog-megalink.pt-md-4.mb-2(href='rewire.html')
+                      h6.fs-18.fw-bold.mb-1 ReWire
+                      p.cog-clr-darkgray.fs-16.d-none.d-md-block Re-Skill &amp; Up-level your workforce
+                    
+                    a.col.cog-nav-link.cog-megalink.pt-md-4.mb-2(href='dot.html')
+                      h6.fs-18.fw-bold.mb-1 Organization Transformation
+                      p.cog-clr-darkgray.fs-16.d-none.d-md-block Digital from the inside out
+                    
               li.nav-item
                   a.cog-nav-link(href='about-us.html') About Us
           a.cog-btn.cog-btn--pri.ms-md-5(href="javascript:void(0);") Get in touch

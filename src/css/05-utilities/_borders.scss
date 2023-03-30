@@ -6,6 +6,10 @@
 
 // Border-radius
 
+.cog-rounded-sm {
+    border-radius: var(--bs-border-radius-xs);
+}
+
 .cog-rounded-reg {
     border-radius: var(--bs-border-radius-sm);
 }

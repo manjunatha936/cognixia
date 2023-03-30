@@ -22,8 +22,8 @@
 
     --bs-body-font-family: var(--main-font);
     --bs-body-font-size  : 1rem;
-    --bs-body-font-weight: 400;
-    --bs-font-weight500  : 500;
+    --bs-body-font-weight: 400 !important;
+    --bs-font-weight500  : 500 !important;
     --bs-font-weight-600 : 600;
     --bs-font-weight-700 : 700;
 
@@ -45,7 +45,7 @@
 }
 
 // Transtion
-$transition: all 0.6s ease;
+$transition: all 0.8s ease;
 
 // Boxshadow
 $boxshadow: 0px 5px 25px rgba(0, 0, 0, 0.05);

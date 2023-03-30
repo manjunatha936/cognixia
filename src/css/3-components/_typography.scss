@@ -50,15 +50,15 @@
   }
 }
 
-
-// sub fonts
-
-
-
 // Lead component
 
 .cog-lead {
   margin-top: rem(10px);
+
+  @include media-breakpoint-down(md) {
+    font-size  : rem(14px) !important;
+    line-height: rem(22px);
+  }
 }
 
 .cog-txt-muted {
