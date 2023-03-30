@@ -115,13 +115,13 @@ array(
 ),
 array(
 	'id' => 'contact_form_footer_Email',
-	'label' => 'contact form footer Phone email',
+	'label' => 'contact form footer email',
 	'type' => 'text',
 	'section' => 'header'
 ),
 array(
 	'id' => 'contact_form_footer_Email_link',
-	'label' => 'contact form footer Phone email link',
+	'label' => 'contact form footer email link',
 	'type' => 'text',
 	'section' => 'header'
 ),
