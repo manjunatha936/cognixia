@@ -71,3 +71,15 @@ const invokeOnLoad = () => {
 };
 
 invokeOnLoad();
+// parsley
+$('#form').parsley().on('field:validated', function() {
+  var ok = $('.parsley-error').length === 0;
+  
+  console.log("validated")
+  $('#error').show();  
+ })
+ .on('form:submit', function() {
+     $("#successfull_msg").show()
+     $("#modal_cnt").hide()
+     return false; 
+ })

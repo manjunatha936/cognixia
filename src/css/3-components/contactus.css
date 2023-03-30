@@ -9,7 +9,7 @@
             .modal-body textarea{border: 0.501024px solid #DFDFDF;border-radius: 2.50512px;}
             .modal_h1{background: linear-gradient(82.76deg, #00387A 50.42%, rgba(7, 109, 132, 0.56) 97.57%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;background-clip: text;text-fill-color: transparent;}
             .modal_submit{border: 2px solid #0952A9;border-radius: 32px;color: #0952A9 !important;background-color: #FFFFFF;}
-            .btn-close{z-index: 100; background-image: url(img/icons/close_black.svg);position: absolute; border: 2px solid #000000;border-radius: 50%;}
+            .btn-close{z-index: 100; background-image: url(img/icons/closeblack.png);position: absolute; border: 2px solid #000000;border-radius: 50%;}
             .modal-footer{color:#ffffff ; padding: 48px 48px 28px;border-bottom-right-radius:16px ;border-bottom-left-radius: 16px; background: #0952A9;background-image: url(img/icons/circles.png);background-repeat: no-repeat;background-position: right;}
             .modal-footer a{color: #FFFFFF;text-decoration: none;}
             .modal-footer h4, .modal-footer h6, .by_txt{font-weight: 400 !important;}

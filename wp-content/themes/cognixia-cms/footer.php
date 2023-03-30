@@ -60,6 +60,26 @@
     <script defer src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
     <script defer src="<?php echo get_template_directory_uri();?>/assets/js/rewire.js"></script>
     <script defer src="<?php echo get_template_directory_uri();?>/assets/js/DMC.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/assets/js/plugin/parsley.js"></script>
+  
+ 
+ <script type="text/javascript">
+  
+
+
+$('#form').parsley().on('field:validated', function() {
+var ok = $('.parsley-error').length === 0;
+
+console.log("validated")
+$('#error').show();  
+})
+.on('form:submit', function() {
+$("#successfull_msg").show()
+$("#modal_cnt").hide()
+return false; 
+})
+
+   </script>
 			
 <?php wp_footer(); ?>
 
