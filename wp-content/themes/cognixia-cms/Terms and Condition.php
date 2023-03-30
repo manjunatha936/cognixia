@@ -54,7 +54,7 @@ get_header();
                     <div class="row">
                         <div class="col-md-5" >
                             <div class=" success_lft position-relative"style="background-image: url(../dist/img/icons/modal_successlft.svg);background-repeat: no-repeat;border-bottom-left-radius:16px;border-top-left-radius:16px;">
-                                <img src="images/success_arrw.webp" class="img-fluid" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/inc/Theme-control/assets/images/success_arrw.png" class="img-fluid" alt="">
                             </div>
                         </div>
                         <div class="col-md-7">
