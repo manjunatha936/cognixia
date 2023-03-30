@@ -88,7 +88,43 @@ function custom_theme_options() {
 				),
 
 // opotion header section
-
+// contact form section
+array(
+	'id' => 'contact form section ',
+	'label' => 'contact  form',
+	'type' => 'tab',
+	'section' => 'header'
+),
+array(
+	'id' => 'contact_information_headquaters',
+	'label' => 'contact information text headquaters address',
+	'type' => 'text',
+	'section' => 'header'
+),
+array(
+	'id' => 'contact_form_footer_no',
+	'label' => 'contact form footer Phone no',
+	'type' => 'text',
+	'section' => 'header'
+),
+array(
+	'id' => 'contact_form_footer_phone_link',
+	'label' => 'contact form footer Phone Link',
+	'type' => 'text',
+	'section' => 'header'
+),
+array(
+	'id' => 'contact_form_footer_Email',
+	'label' => 'contact form footer Phone email',
+	'type' => 'text',
+	'section' => 'header'
+),
+array(
+	'id' => 'contact_form_footer_Email_link',
+	'label' => 'contact form footer Phone email link',
+	'type' => 'text',
+	'section' => 'header'
+),
 // option footer section
 						array(
 									'id' => 'footer_logo_tab',

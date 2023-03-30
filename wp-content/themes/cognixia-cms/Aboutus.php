@@ -41,10 +41,9 @@ get_header();
                 <div class="modal-footer d-md-block d-none">
                   <h4 class="mb-4">Contact Information</h4>
                   <div class="row g-0 align-items-end">
-                    <div class="col-md-4"><h6>Headquarters:
-                        110 Allen Road,Basking Ridge,NJ 07920</h6></div>
-                    <div class="col-md-4 ps-4"><h6>Phone <a href="javascript:void(0);">+1-877-264-6424</a></h6></div>
-                    <div class="col-md-4"><h6>Email<a href="javascript:void(0);"> info@cognixia.com</a></h6></div>
+                    <div class="col-md-4"><h6><?php echo ot_get_option('contact_information_headquaters') ?></h6></div>
+                    <div class="col-md-4 ps-4"><h6>Phone <a href="<?php echo ot_get_option('contact_form_footer_phone_link') ?>"><?php echo ot_get_option('contact_form_footer_no') ?></a></h6></div>
+                    <div class="col-md-4"><h6>Email<a href="<?php echo ot_get_option('contact_form_footer_Email_link') ?>"><?php echo ot_get_option('contact_form_footer_Email') ?></a></h6></div>
                   </div>
                 </div>
             </div>

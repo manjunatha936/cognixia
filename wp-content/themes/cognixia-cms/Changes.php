@@ -34,7 +34,7 @@ get_header();
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]');?> 
+                 <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]');?> 
 
                 </div>
               </div>
