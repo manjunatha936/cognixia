@@ -1,0 +1,255 @@
+.cog-author-info {
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.cog-author-fig {
+    height       : rem(53px);
+    width        : rem(53px);
+    border-radius: var(--bs-border-radius-xxl);
+}
+
+.cog-card-link {
+    text-decoration: none;
+    display        : flex;
+    align-items    : center;
+}
+
+// Images
+.cog-imgx256 {
+    height: rem(212px);
+
+    @include media-breakpoint-down(md) {
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(md) {
+        height   : rem(256px);
+        max-width: rem(307px);
+    }
+}
+
+.cog-imgx40 {
+    height: rem(40px);
+    width : rem(40px);
+}
+
+.cog-imgx120 {
+    height       : rem(64px);
+    width        : rem(64px);
+    border-radius: var(--bs-border-radius-xxl);
+
+    @include media-breakpoint-up(md) {
+        height: rem(120px);
+        width : rem(120px);
+    }
+}
+
+.cog-imgx108 {
+    height       : rem(108px);
+    width        : rem(108px);
+    border-radius: var(--bs-border-radius-xs);
+}
+
+// details
+
+.cog-blogcnt-wrap {
+    color: var(--bs-darkgray) !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @extend .fs-24;
+        @extend .fw-xbold;
+        margin-bottom: 1rem !important;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: .5rem !important;
+            font-size    : rem(20px) !important;
+            line-height  : rem(26px) !important;
+        }
+    }
+
+    p {
+        color: var(--bs-darkgray) !important;
+        @extend .fs-18;
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 1.5rem;
+            font-size    : rem(14px) !important;
+            line-height  : rem(20px) !important;
+        }
+    }
+
+    img {
+        max-width    : 100%;
+        border-radius: var(--bs-border-radius-xs);
+        margin-bottom: 1.5rem;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.cog-author-card {
+    max-width: rem(416px);
+    width    : 100%;
+
+    @include media-breakpoint-down(md) {
+        display: flex;
+
+        padding: {
+            left : 1rem;
+            right: 1rem;
+        }
+    }
+
+    padding: {
+        top   : 1rem;
+        bottom: 1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: {
+            top   : 3rem;
+            bottom: 3rem;
+        }
+    }
+
+    &__body {
+        max-width: 100%;
+        width    : rem(222px);
+    }
+
+    .fs-32 {
+        @include media-breakpoint-down(md) {
+            font-size: rem(20px) !important;
+        }
+    }
+}
+
+.cog-blocklist {
+    color: var(--bs-gray-100);
+    @extend .fs-18;
+
+
+    &__item {
+        position     : relative;
+        display      : inline-block;
+        padding-right: 1.4rem;
+
+        @include media-breakpoint-down(md) {
+            font-size  : rem(14px) !important;
+            line-height: rem(20px) !important;
+        }
+
+        &::before {
+            content      : "";
+            position     : absolute;
+            height       : rem(5px);
+            width        : rem(5px);
+            background   : var(--bs-gray-100);
+            right        : 8px;
+            top          : 9px;
+            border-radius: var(--bs-border-radius-xxl);
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.cog-cards-horwraper {
+    @include media-breakpoint-down(md) {
+        padding: {
+            left : 2.1rem;
+            right: 2.1rem;
+        }
+
+        .swiper-button-prev {
+            left: -0.6rem !important;
+        }
+
+        .swiper-button-next {
+            right: -0.6rem !important;
+        }
+    }
+}
+
+.cog-cards-group {
+    li {
+        @include media-breakpoint-up(md) {
+            border-bottom : 1px solid rgba($color: #000000, $alpha: .1);
+            padding-bottom: 1.8rem !important;
+            margin-bottom : 1.8rem !important;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .cog-imgx108 {
+        @include media-breakpoint-down(md) {
+            height       : rem(172px);
+            width        : 100%;
+            border-radius: 8px 8px 0px 0px;
+        }
+    }
+
+    .cog-blogcard__body {
+        @include media-breakpoint-down(md) {
+            background    : var(--bs-bg-secondary);
+            border-radius : 0px 0px 8px 8px;
+            display       : flex;
+            flex-direction: column;
+
+            padding: {
+                top   : 1rem;
+                bottom: 1rem;
+            }
+        }
+    }
+
+    .fs-20 {
+        @include media-breakpoint-down(md) {
+            font-size  : rem(18px) !important;
+            line-height: rem(24px) !important;
+        }
+    }
+}
+
+// sticky
+.cog-sidebarsticky {
+    @include media-breakpoint-up(md) {
+        position: sticky;
+        top     : 0;
+        height  : 100%;
+        overflow: auto;
+    }
+}
+
+// Social info
+
+.cog-social-list {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
+    display      : inline-block;
+}
+
+.cog-social-link {
+    margin-right: 1.5rem;
+    display     : inline-block;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

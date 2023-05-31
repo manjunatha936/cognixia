@@ -42,10 +42,12 @@
     --bs-link-color        : #01397B !important;
     --bs-link-hover-color  : #0a58ca;
     --bs-highlight-bg      : #fff3cd;
+
+    --bs-bg-image: url("../img/home/solution/organization.png") !important;
 }
 
 // Transtion
-$transition: all 0.8s ease;
+$transition: all 0.6s ease;
 
 // Boxshadow
 $boxshadow: 0px 5px 25px rgba(0, 0, 0, 0.05);

@@ -1,0 +1,11 @@
+mixin Techcards(tech_src, tech_alt, tech_heading, days, course_code)
+    a.d-block.cog-card-tech.text-start.bg-white.cog-rounded-sm.h-100(href="javascript:void(0);")
+        img.cog-imgfit.cog-card-tech__fig.cog-bg-theme(src=tech_src alt=tech_alt)
+        .cog-card-tech__body
+            h5.fs-24.fw-xbold.mb-0=tech_heading
+            span.d-block.py-2.py-md-3
+                | Duration:
+                span=days
+            span
+                | Course :
+                span=course_code

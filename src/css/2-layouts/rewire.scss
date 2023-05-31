@@ -23,6 +23,10 @@
 
             .cog-client-listbox-hover-cnt {
                 display: flex;
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
             }
         }
     }

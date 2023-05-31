@@ -1,0 +1,44 @@
+// MIXIN OUR SERVICES LIST MIXIN
+mixin Blogcards(Card_vertical, Image_src, Image_alt, Card_body_vertical, card__tag, card__time, card__heading, card__des, Author_info, author_src, author__details)
+    .cog-blogcard(class!=attributes.class)
+        if Card_vertical
+            img.cog-imgfit.cog-imgx402.cog-blog-figure(src=Image_src alt=Image_alt)
+        else
+            img.cog-imgfit.cog-imgx256.cog-rounded-sm(src=Image_src alt=Image_alt)
+        
+        // Blog card body
+        .cog-blogcard__body
+            if Card_body_vertical
+                .d-flex.justify-content-between.align-items-center.cog-clr-gray100
+                    span= card__tag
+                    small.text-capitalize= card__time
+                
+                // maininfo
+                h3.h3.fw-bold.my-3= card__heading
+                p.pe-md-4.pe-xl-5= card__des
+            
+            else
+                .d-flex.justify-content-between.align-items-center.cog-clr-gray100
+                    span= card__tag
+                    small= card__time
+                
+                // maininfo
+                h3.fs-20.my-3.fw-normal.pe-md-3= card__heading
+
+            if Author_info
+                .cog-author-info.d-md-flex.pt-2.pt-md-4
+                    .cog-author-details
+                        img.cog-author-fig(src= author_src alt="Author image")
+                        span.fs-16.d-inline-block.ms-2.ms-md-3= author__details
+                
+                    a.cog-card-link.fs-18.cog-clr-primary(href="javascript:void(0);")
+                        | Read more
+                        <svg class="ms-2 mt-1" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.781982 1.65552L6.78198 6.65552L0.781982 11.6555" stroke="#0952A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+            
+            else
+                .cog-author-info.d-md-flex.pt-2
+                    .cog-author-details.d-flexa.lign-items-center
+                        img.cog-author-fig.cog-imgx40(src= author_src alt="Author image")
+                        span.fs-16.d-inline-block.ms-3= author__details

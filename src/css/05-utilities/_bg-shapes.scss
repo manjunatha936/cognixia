@@ -46,3 +46,19 @@
     left    : 0;
     z-index : -1;
 }
+
+.cog-pattern {
+    position: absolute;
+
+    &-right {
+        bottom: 0;
+        right : 0;
+    }
+}
+
+// Boxes
+
+.cog-recbox {
+    padding : rem(40px) rem(120px);
+    position: relative;
+}

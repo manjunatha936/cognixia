@@ -1,0 +1,15 @@
+// MIXIN OUR SERVICES LIST MIXIN
+mixin Insightcards(Image_src, Image_alt, card__tag, author_src, author__details, card__heading, card__date, card__time)
+    .cog-blogcard.cog-blogcard--hr.cog-border.bg-white
+        img.cog-imgfit.cog-imgx108(src=Image_src alt=Image_alt)
+        // Blog card body
+        .cog-blogcard__body.py-md-0.position-relative
+            span.d-inline-block.fs-16.cog-clr-gray100.order-1= card__tag
+            .cog-author-details.d-flex.align-items-center.order-4.order-md-2.my-2
+                img.cog-author-fig.cog-imgx40(src= author_src alt="Author image")
+                span.fs-16.d-inline-block.ms-2= author__details
+            
+            h3.fs-20.fw-normal.my-2.cog-clr-darkgray.order-3= card__heading
+            .d-flex.align-items-center.cog-clr-gray100.order-2.order-md-4
+                span.fs-16.me-4.d-none.d-md-block= card__date
+                small.text-capitalize.fs-16= card__time

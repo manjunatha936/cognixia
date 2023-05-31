@@ -1,6 +1,9 @@
 section.cog-banner.cog-bg-info
-    .cog-banner__figwrap.ms-auto
-        img.cog-img-blendmode.cogximg650(src="./img/Banners/designer-baanner.webp" alt="Banner")
+    .cog-banner__figwrap.ms-auto(id="cog-video")
+        video.cog-img-blendmode.cogximg650(loop='loop' muted='muted' autoplay='autoplay' preload='auto' crossorigin='anonymous' tabindex='0' poster='./img/Banners/designer-baanner.webp')
+            source(src='video/Cognixia-Promo-Video.mp4' type='video/mp4')
+            source(src='./img/Banners/designer-baanner.webp' type='video/mp4')
+        //- img.cog-img-blendmode.cogximg650(src="./img/Banners/designer-baanner.webp" alt="Banner")
     .cog-bg-gradient.cog-bg-gradient--pri
     //Banner content
     .cog-banner-content.cog-vr-flexcenter
@@ -13,6 +16,19 @@ section.cog-banner.cog-bg-info
                         | your 
                         small.cog-txt-muted.fw-xbold DNA
 
-                    a.cog-btn.cog-btn--lg.cog-btn--white(href="javascript:void(0);")
+                    a.cog-btn.cog-btn--lg.cog-btn--white.cursor-pointer(data-bs-toggle="modal" data-bs-target="#video-modal" data-bs-whatever="@mdo")
                         img.cog-play-icon(src="./img/icons/play-button.svg" alt="play button")
-                        span.fs-18.cog-play-txt.ms-2 Watch showreel
+                        span.fs-18.cog-play-txt.ms-2 Play Video
+
+#video-modal.modal.modal-lg.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered
+        .modal-content
+            a.cog-btn-close(data-bs-dismiss='modal' aria-label='Close')
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25 13C25 6.375 19.625 1 13 1C6.375 1 1 6.375 1 13C1 19.625 6.375 25 13 25C19.625 25 25 19.625 25 13Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M17 17L9 9M9 17L17 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            video#cog-video-model(autoplay='autoplay' crossorigin='anonymous' tabindex='0' controls="controls")
+                source(src='./video/Cognixia-Promo-Video.mp4' type='video/mp4')
+                source(src='video/Cognixia-Promo-Video.webm' type='video/webm')
+

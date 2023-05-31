@@ -87,3 +87,34 @@ section {
 .nt {
   color: var(--bs-code-color);
 }
+
+// page not found
+
+.cog-pagenotfound {
+  position: relative;
+  z-index : 10;
+  height  : calc(100vh - 10vh);
+  @extend .cog-flexcenter;
+
+  &__text {
+    @include media-breakpoint-down(md) {
+      font-size  : rem(28px) !important;
+      font-weight: var(--bs-font-weight500);
+    }
+  }
+
+  img {
+    @include media-breakpoint-down(md) {
+      height: 160px;
+    }
+  }
+
+  &__cnt {
+    max-width: 100%;
+    width    : 280px;
+
+    @include media-breakpoint-up(md) {
+      width: 480px;
+    }
+  }
+}

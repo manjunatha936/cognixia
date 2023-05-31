@@ -18,11 +18,11 @@
 .cogximg650 {
     max-height: 100%;
     height    : 267px;
+    object-fit: cover;
+    width     : 100%;
 
     @include media-breakpoint-down(md) {
-        max-width : 100%;
-        object-fit: cover;
-        width     : 100%;
+        max-width: 100%;
     }
 
     @include media-breakpoint-up(md) {
@@ -68,5 +68,15 @@
 
     @include media-breakpoint-up(md) {
         height: rem(345px);
+    }
+}
+
+// Blog images
+
+.cog-imgx402 {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+        height: rem(402px);
     }
 }

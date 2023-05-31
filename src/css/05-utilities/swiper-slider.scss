@@ -42,6 +42,15 @@
 }
 
 // Pagination
+
 .cog-pagination-btm {
     bottom: -2.5rem !important;
+}
+
+.InsightcardSwiper {
+    .swiper-wrapper {
+        @include media-breakpoint-up(md) {
+            display: block !important;
+        }
+    }
 }

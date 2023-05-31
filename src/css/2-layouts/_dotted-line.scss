@@ -7,7 +7,24 @@
     overflow : hidden;
 
     &--btm {
-        top   : unset !important;
-        bottom: -11%;
+        top      : unset !important;
+        bottom   : 0%;
+        transform: translate(-50%, 0%) !important;
+        height   : calc(100% - 30%);
+
+        img {
+            height: 78%;
+        }
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        &--btm {
+            bottom: -0%;
+            height: calc(100% - 36%);
+
+            img {
+                height: 80%;
+            }
+        }
     }
 }

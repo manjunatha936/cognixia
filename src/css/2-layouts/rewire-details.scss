@@ -1,0 +1,63 @@
+.cog-navblock-list {
+    justify-content: space-between;
+    padding-top    : 1.2rem !important;
+
+    @include media-breakpoint-down(md) {
+        white-space   : nowrap;
+        overflow-x    : auto;
+        padding-bottom: 1rem !important;
+
+        li {
+            margin-right: 1.2rem !important;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: {
+            left : rem(80px) !important;
+            right: rem(80px) !important;
+        }
+    }
+}
+
+.cog-navblock-link {
+    display        : inline-block;
+    text-decoration: none;
+    color          : var(--bs-darkgray);
+    font-weight    : var(--bs-font-weight500);
+}
+
+// Readmore and less
+
+.content {
+    height    : 105px;
+    overflow  : hidden;
+    transition: height 0.3s;
+}
+
+.cog-imgx270 {
+    height   : rem(270px);
+    max-width: 100%;
+    width    : 305px;
+}
+
+.cog-listcount {
+    column-count: 2;
+
+    li {
+        @extend .fs-20;
+        margin-bottom: 1rem;
+        position     : relative;
+        padding-left : 1.5rem !important;
+
+        &::before {
+            content   : "";
+            position  : absolute;
+            background: url("../../img/icons/tick-mark.svg") no-repeat;
+            height    : rem(20px);
+            width     : rem(20px);
+            left      : 0;
+            top       : 10px;
+        }
+    }
+}

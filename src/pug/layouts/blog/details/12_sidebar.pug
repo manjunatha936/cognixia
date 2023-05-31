@@ -1,0 +1,57 @@
+.cog-sidesticky.js-slider
+    .cog-author-card.cog-bg-lightblue.text-md-center.cog-rounded-reg.mb-lg-5
+        img.cog-imgx120.me-3.me-md-0(src="./img/blog/avatar-amrish.png" alt="author figure")
+        .cog-author-card__body.mx-md-auto
+            h3.fs-32.fw-bold.my-2.my-md-3 Rich Bowers
+            p.fs-18.cog-clr-secondary.d-none.d-md-block AVP of Learning & Development and Delivery
+            .cog-blocklist.my-2.my-md-3
+                span.cog-blocklist__item Mar 15, 2023
+                span.cog-blocklist__item 12 min read
+            
+            a.cog-card-link.d-none.d-md-block.mx-auto.justify-content-md-center(href="javascript:void(0);")
+                <svg class="me-2" width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5001 11.6664V15.222C17.5001 15.6935 17.3128 16.1457 16.9794 16.4791C16.646 16.8125 16.1938 16.9998 15.7223 16.9998H3.27768C2.80618 16.9998 2.35399 16.8125 2.02059 16.4791C1.68718 16.1457 1.49988 15.6935 1.49988 15.222V11.6664" stroke="#0952A9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.05322 7.22241L9.49774 11.6669L13.9423 7.22241" stroke="#0952A9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.49988 11.6668V1" stroke="#0952A9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                span Download PDF
+    
+    .ps-lg-5.ms-lg-3
+        // share insights
+        .cog-social-info.py-4.py-md-5.text-center.text-md-start
+            h3.fs-24.mb-3.mb-md-4.fw-bold Share Insights
+            .cog-social-list.pb-3.pb-md-4
+                a.cog-social-link(href="javascript:void(0);")
+                    img(src="./img/icons/social/facebook.svg" alt="Facebook icon")
+                a.cog-social-link(href="javascript:void(0);")
+                    img(src="./img/icons/social/linkdin.svg" alt="linkdin icon")
+                a.cog-social-link(href="javascript:void(0);")
+                    img(src="./img/icons/social/twitter.svg" alt="twitter icon")
+
+
+        // Recent insights
+        h3.fs-24.mb-4.fw-bold.text-center.text-md-start Recent Insights
+
+        .cog-cards-horwraper.position-relative
+            .swiper.InsightcardSwiper
+                ul.cog-cards-group.swiper-wrapper
+                    li.col-md-12.mt-3.swiper-slide
+                        include ../../../mixins/insights-cards.pug
+                        +Insightcards("./img/blog/blog-card-fig.png", "insight blog", "Digital Transformation", "/img/blog/avatar-amrish.png", "Eric Miller", "Digital Transformation is about people, not only technology", "15 March", "12 min read")
+                    li.col-md-12.mt-3.swiper-slide
+                        include ../../../mixins/insights-cards.pug
+                        +Insightcards("./img/blog/blog-card-fig.png", "insight blog", "Digital Transformation", "/img/blog/avatar-amrish.png", "Eric Miller", "Digital Transformation is about people, not only technology", "15 March", "12 min read")
+            
+                // indicators
+                .swiper-pagination.position-relative.d-block.d-md-none
+                
+            // Swiper paginatin arrows
+            .cog-arrows-container.d-block.d-md-none
+                .cog-btn-circle.swiper-button-prev
+                    <svg class="cog-icon-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.06688 0.641346L15.6669 7.24135C15.7669 7.34135 15.8379 7.44968 15.8799 7.56635C15.9219 7.68301 15.9425 7.80801 15.9419 7.94135C15.9419 8.07468 15.9209 8.19968 15.8789 8.31635C15.8369 8.43301 15.7662 8.54135 15.6669 8.64135L9.06688 15.2413C8.88355 15.4247 8.65421 15.5203 8.37888 15.5283C8.10355 15.5363 7.86621 15.4407 7.66688 15.2413C7.46688 15.058 7.36255 14.8287 7.35388 14.5533C7.34521 14.278 7.44121 14.0407 7.64188 13.8413L12.5419 8.94135H1.36688C1.08354 8.94135 0.84588 8.84535 0.653879 8.65335C0.461879 8.46135 0.366212 8.22401 0.366879 7.94135C0.366879 7.65801 0.462545 7.42035 0.653879 7.22835C0.845213 7.03635 1.08288 6.94068 1.36688 6.94135H12.5419L7.64188 2.04135C7.45855 1.85801 7.36255 1.62468 7.35388 1.34135C7.34521 1.05801 7.44121 0.824679 7.64188 0.641346C7.82521 0.441346 8.05855 0.341347 8.34188 0.341347C8.62521 0.341347 8.86688 0.441346 9.06688 0.641346Z" fill="#0952A9"></path>
+                    </svg>
+                .cog-btn-circle.swiper-button-next
+                    <svg class="cog-icon-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.06688 0.641346L15.6669 7.24135C15.7669 7.34135 15.8379 7.44968 15.8799 7.56635C15.9219 7.68301 15.9425 7.80801 15.9419 7.94135C15.9419 8.07468 15.9209 8.19968 15.8789 8.31635C15.8369 8.43301 15.7662 8.54135 15.6669 8.64135L9.06688 15.2413C8.88355 15.4247 8.65421 15.5203 8.37888 15.5283C8.10355 15.5363 7.86621 15.4407 7.66688 15.2413C7.46688 15.058 7.36255 14.8287 7.35388 14.5533C7.34521 14.278 7.44121 14.0407 7.64188 13.8413L12.5419 8.94135H1.36688C1.08354 8.94135 0.84588 8.84535 0.653879 8.65335C0.461879 8.46135 0.366212 8.22401 0.366879 7.94135C0.366879 7.65801 0.462545 7.42035 0.653879 7.22835C0.845213 7.03635 1.08288 6.94068 1.36688 6.94135H12.5419L7.64188 2.04135C7.45855 1.85801 7.36255 1.62468 7.35388 1.34135C7.34521 1.05801 7.44121 0.824679 7.64188 0.641346C7.82521 0.441346 8.05855 0.341347 8.34188 0.341347C8.62521 0.341347 8.86688 0.441346 9.06688 0.641346Z" fill="#0952A9"></path>
+                    </svg>

@@ -89,7 +89,6 @@ get_header();
         </div>
       </section>
     </main>
-
   </div>
   <?php include_once 'footer.php'; ?>
 </body>

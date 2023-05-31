@@ -166,3 +166,31 @@ header .dropdown-menu {
 }
 
 // Mobile styling
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+// @include media-breakpoint-down(md) {
+//     .navbar-collapse {
+//         position      : fixed;
+//         z-index       : 100;
+//         height        : calc(100vh - 10vh);
+//         width         : 95%;
+//         left          : 0rem;
+//         right         : 0;
+//         top           : 0;
+//         bottom        : 0;
+//         background    : var(--bs-white);
+//         display       : flex;
+//         align-items   : self-start;
+//         flex-direction: column;
+//         margin        : 0 auto;
+//         border-radius : var(--bs-border-radius-xs);
+//         box-shadow    : 11px 8px 37px 0 rgba(38, 40, 128, 0.1);
+//     }
+// }
+
+.navbar-collapse.show {
+    transform: translateY(0);
+}

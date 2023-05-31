@@ -120,7 +120,7 @@
       left : rem(10px);
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: {
         left : rem(40px);
         right: rem(40px);
@@ -130,7 +130,7 @@
 }
 
 .cog-card-h240 {
-  height    : rem(221px);
+  height    : auto;
   max-height: 100%;
 
   @include media-breakpoint-up(md) {
@@ -143,20 +143,116 @@
   transition: $transition;
 
   .cog-card__des {
-    display   : none;
-    transition: $transition;
+    @include media-breakpoint-up(md) {
+      display   : none;
+      transition: $transition;
+    }
   }
 
-  &:is(:hover, :focus) {
-    transition: $transition;
-
-    h4 {
-      display: none;
-    }
-
-    .cog-card__des {
+  @include media-breakpoint-up(md) {
+    &:is(:hover, :focus) {
       transition: $transition;
-      display   : block;
+
+      h4 {
+        display: none;
+      }
+
+      .cog-card__des {
+        transition: $transition;
+        display   : block;
+      }
     }
+  }
+}
+
+// Blog cards
+.cog-blogcard {
+  background   : var(--bs-bg-secondary);
+  border-radius: var(--bs-border-radius-sm);
+
+  @include media-breakpoint-up(md) {
+    height: 100%;
+  }
+
+  &--latest {
+    .cog-blog-figure {
+      border: {
+        top-left-radius : var(--bs-border-radius-sm);
+        top-right-radius: var(--bs-border-radius-sm);
+      }
+    }
+  }
+
+  &--hr {
+    margin-bottom: 1.5rem;
+    height       : auto;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 1rem;
+    }
+
+    .cog-rounded-sm {
+      @include media-breakpoint-down(md) {
+        border-radius: 16px 16px 0 0 !important;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .cog-blogcard__body {
+      padding: {
+        left : 1.2rem;
+        right: 1.2rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        padding: {
+          left : 1.5rem;
+          right: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__body {
+    padding: 1.5rem 1.2rem;
+
+    a {
+      text-decoration: none;
+      color          : var(--bs-secondary);
+    }
+
+    @include media-breakpoint-up(md) {
+      padding: 1.8rem 3rem;
+    }
+  }
+}
+
+.cog-card-tech {
+  text-decoration: none;
+  color          : var(--bs-secondary);
+
+  &:is(:hover, :focus) {
+    color: var(--bs-secondary);
+  }
+
+  &__fig {
+    height: rem(45px);
+
+    border : {
+      top-left-radius : var(--bs-border-radius-sm);
+      top-right-radius: var(--bs-border-radius-sm);
+    }
+  }
+
+  &__body {
+    padding: 2.2rem 1.5rem;
+    @extend .fs-20;
   }
 }
