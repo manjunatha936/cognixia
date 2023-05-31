@@ -1,0 +1,69 @@
+section.section-padding100#contact-info-sec
+    .container    
+        .row.contact-row
+            .col-md-3.contact-info.cog-bg-primary.position-relative
+                h4.mb-3 Contact Information
+                h6.mb-4 Headquarters: 110 Allen Road,Basking Ridge,NJ 07920
+                h6.mb-4 Phone
+                            a.text-decoration-none(href="#")  +1-877-264-6424
+                h6.mb-4 Email 
+                            span 
+                                a(href="#")  info@cognixia.com
+                .contact-info-img
+                    img(src="./img/rewire/symbol-plain.svg", alt="")                
+            .col-md-8.offset-md-1
+                form#contact-form
+                    .row 
+                        .col-md-6.col-11.form_group
+                            label(for='fullname') Name
+                            input.form-control(type='text' name='fullname' data-parsley-required='' placeholder='Enter Name')
+                        .col-md-6.col-11.form_group
+                            label(for='company') Company
+                            input.form-control(type='company' name='company' data-parsley-required='' placeholder='Enter company name')
+                        .col-md-6.col-11.form_group
+                            label(for='phone') Phone Number
+                            input#phone.form-control(type='tel' data-parsley-type='number' name='phone' validatenumber='' data-parsley-maxlength='10' data-parsley-required='' placeholder='Enter mobile number')
+                        .col-md-6.col-11.form_group
+                            label(for='email') Email
+                            input.form-control(type='email' name='email' data-parsley-type='email' data-parsley-required='' placeholder='Enter email address')
+                        .col-12.col-md-12.form_group
+                            .row.g-0.mb-4
+                                label(for="dropdown_1") Is this company sponsored training?
+                                .col-12.dropdown#dropdown_1
+                                    button.dropdown__button(type='button') Select a Purpose
+                                    ul.dropdown__list
+                                        li.dropdown__list-item(data-value='yes') Yes
+                                        li.dropdown__list-item(data-value='no') No
+                                label(for="dropdown_2")   Looking for;      
+                                .col-12.dropdown#dropdown_2
+                                    button.dropdown__button(type='button') Select a Purpose
+                                    ul.dropdown__list
+                                        li.dropdown__list-item(data-value='option 1') Individual training
+                                        li.dropdown__list-item(data-value='option 2') Enterprise/Group training
+                                label(for="dropdwon_3") Preferred training days
+                                .col-12.dropdown#dropdwon_3
+                                    button.dropdown__button(type='button') Select a Purpose
+                                    ul.dropdown__list
+                                        li.dropdown__list-item(data-value='select 1') Monday - Friday
+                                        li.dropdown__list-item(data-value='select 2') Saturday -Sunday
+                    
+                        h6.by_txt.d-md-block.d-none.mb-3 By filling out this form and clicking submit, you acknowledge our privacy policy.
+                        p#error.parsley-error.mb-4 Please fill all the mandatory fields to continue.
+                        button.contact-info-submit.cog-btn--pri.cog-btn.cog-btn--default(type='submit') Submit
+        #contact-success.contact-success
+            .success-row
+                .row
+                    .col-md-5
+                        .success_lft.position-relative(style='background-image: url(./img/success-rewire.png);background-repeat: no-repeat;border-bottom-left-radius:16px;border-top-left-radius:16px;')
+                            img.img-fluid(src='images/success_arrw.webp' alt='')
+                    .col-md-7.d-flex.align-items-center
+                        .success_rght.text-center
+                            img.mb-4(src='../dist/img/icons/success_tick.png' alt='check-img')
+                            h1.success_h1 Perfect. We will be in touch soon.
+        .ui.search
+            .ui.icon.input
+                .input-group.mb-3
+                input.prompt(type='text' placeholder='Select courses' autocomplete='off' aria-describedby='button-addon2')
+                button#button-addon2.cog-btn.cog-btn--default(type='button') Button
+                i.search.icon
+            .results
